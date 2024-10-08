@@ -64,6 +64,13 @@ button.normal {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.accent-white {
+	/*  color: #01A9F4; */
+		background: white;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
 .accent-fishers {
     
         background: -webkit-linear-gradient(#967259, #ece0d1);
@@ -249,7 +256,10 @@ nav a.apple-logo {
 }
 
 .landing {
-    background: #F5F5F7;
+    background-image: url('Files/fhsbg.png');
+    background-size: cover; /* Adjusts the image to cover the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
     display: flex;
     gap: 0;
     flex-direction: column;
@@ -1641,7 +1651,8 @@ nav a.apple-logo {
 
 /* Hover effect for the button */
 .button:hover {
-    background-color: #e3c7ab; /* Darker blue on hover */
+    background-color: #ece0d1; /* Darker blue on hover */
+	color: black;
     transform: scale(1.05); /* Slight zoom on hover */
 }
 
@@ -1871,4 +1882,20 @@ footer .boring .bottom .legal .left .legal-links .seperator {
     background-size: cover; /* Adjusts the image to cover the entire section */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh; /* Adjust the height as needed */
+    padding: 20px;
+}
+
+.iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    max-width: 960px; /* Optional: sets a max width */
+    border: none;
 }
