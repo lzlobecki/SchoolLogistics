@@ -67,7 +67,7 @@ button.normal {
 
 .accent-white {
 	/*  color: #01A9F4; */
-		background: white;
+	background: -webkit-linear-gradient(white, white, #b6babe);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
