@@ -256,8 +256,8 @@ nav a.apple-logo {
 }
 
 .landing {
-    background-image: url('Files/fhsbg.png');
-    background-size: cover; /* Adjusts the image to cover the entire section */
+    background-image: url('Files/background coffee.jpeg');
+    background-size:cover; /* Adjusts the image to cover the entire section */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     display: flex;
@@ -265,7 +265,7 @@ nav a.apple-logo {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 5px;
 }
 
 .landing .text {
@@ -1493,15 +1493,6 @@ nav a.apple-logo {
         width: calc(100% - 92px);
     }
 
-    footer .footer-features {
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    footer .boring .links {
-        flex-direction: column;
-        gap: 44px;
-    }
 
     .end .last-boxes .last-box:first-child img {
         position: relative;
@@ -1551,7 +1542,7 @@ nav a.apple-logo {
     footer .footer-features .footer-feature {
         min-width: 400px;
     }
-}
+}x
 
 
 @media only screen and (max-width: 600px) {
@@ -1851,7 +1842,7 @@ footer .boring .bottom .legal .left .legal-links .seperator {
 }
 
 .local-nav-wrapper {
-    padding-top: 5px; /* Adds space above the entire nav wrapper */
+    padding-top: 1px; /* Adds space above the entire nav wrapper */
 }
 
 
@@ -1864,10 +1855,10 @@ footer .boring .bottom .legal .left .legal-links .seperator {
 }
 
 .local-nav .logo {
-    height: 80px; /* Adjust the size as needed */
+    height: 60px; /* Adjust the size as needed */
     width: auto;
-    padding-top: 5px; /* Adds space above the logo */
-    margin-top: 10px; /* Adds more space if needed */
+    padding-top: 1px; /* Adds space above the logo */
+    margin-top: 1px; /* Adds more space if needed */
     max-width: 100%; /* Ensures it scales properly */
 }
 
