@@ -10,6 +10,7 @@
     <div class="local-nav-wrapper">
         <div class="local-nav">
             <a href="index.html">
+                <h6> ‎  </h6>
                 <img src="Files/logo.png" alt="Crew Brew Logo" class="logo">
             </a>
 
@@ -48,7 +49,7 @@
 const productData = [
   {
     id: 1,
-    title: "Coffee",
+    title: "Coffee  (Large)",
     image: "Files/coffee icon.jpeg",
     price: "1.99 to 4.99",
     rating: 4.5,
@@ -57,6 +58,16 @@ const productData = [
   },
   {
     id: 2,
+    title: "Coffee  (Small)",
+    image: "files/coffee icon.jpeg",
+    price: 15.97,
+    originalPrice: 18.95,
+    rating: 4.8,
+    reviews: 952,
+    primeDelivery: false
+  },
+  {
+    id: 3,
     title: "Hot Choloclate",
     image: "files/hot choloclate icon.jpeg",
     price: 21.55,
@@ -66,7 +77,7 @@ const productData = [
     primeDelivery: false
   },
   {
-    id: 3,
+    id: 4,
     title: "Water",
     image: "files/water cup.jpeg",
     price: 15.97,
@@ -75,7 +86,6 @@ const productData = [
     reviews: 952,
     primeDelivery: false
   },
-
 ];
 
 const grid = document.querySelector('.grid');
@@ -96,13 +106,15 @@ productData.forEach(product => {
       ${product.originalPrice ? `<span class="original-price">$${product.originalPrice}</span>` : ''}
     </div>
     ${product.primeDelivery ? `<div class="prime-delivery">prime FREE delivery</div>` : ''}
-    <button class="add-to-cart">Order</button>
+    
+    <button class="add-to-cart" ${product.id === 2 ? 'onclick="window.location.href=\'https://square.link/u/pFmzmu2Y\'"' : ''}>Order</button>
   `;
   
   grid.appendChild(productCard);
 });
-</script>
-</body>
 
+</script>
+
+</body>
 
 </html>
