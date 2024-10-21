@@ -1,0 +1,95 @@
+body {
+    background: -webkit-linear-gradient(#ea0029, #b6babe);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+#login-container h3 {
+    margin-bottom: 25px;
+    color: #333;
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: bold;
+}
+
+form#email-login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form#email-login-form input[type="email"] {
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+form#email-login-form input[type="email"]:focus {
+    border-color: #0071E3;
+    outline: none;
+}
+
+form#email-login-form button {
+    padding: 12px 16px;
+    background: -webkit-linear-gradient(#ea0029, #b6babe);
+    background: linear-gradient(#ea0029, #b6babe);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+form#email-login-form button:hover {
+    background: -webkit-linear-gradient(#b6babe, #ea0029);
+    background: linear-gradient(#b6babe, #ea0029);
+    transform: scale(1.05);
+}
+
+form#email-login-form button:active {
+    transform: scale(0.98);
+}
+
+#message {
+    margin-top: 20px;
+    color: #28a745;
+    font-size: 0.9em;
+    font-family: 'SF Pro Text', sans-serif;
+}
+
+@media (max-width: 500px) {
+    #login-container {
+        padding: 30px 20px;
+    }
+
+    #login-container h3 {
+        font-size: 1.5em;
+    }
+
+    form#email-login-form input[type="email"],
+    form#email-login-form button {
+        font-size: 0.9em;
+        padding: 10px 14px;
+    }
+}
