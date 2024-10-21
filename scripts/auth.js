@@ -32,7 +32,7 @@ EmailLoginForm.addEventListener('submit', (e) => {
         sendSignInLinkToEmail(Auth, email, ActionCodeSettings)
             .then(() => {
                 window.localStorage.setItem('ClientEmail', email);
-                MessageDiv.innerHTML = 'A sign-in link has been sent to your email.';
+                MessageDiv.innerHTML = 'A sign-in link has been sent to your email. Please make sure to check your spam folder.';
                 EmailLoginForm.reset();
             })
     } else {
