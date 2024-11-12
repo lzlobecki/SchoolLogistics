@@ -2,13 +2,12 @@
 import { getAuth, sendSignInLinkToEmail, isSignInWithEmailLink, signInWithEmailLink } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-auth.js";
 
 const FirebaseConfig = {
-    apiKey: "AIzaSyDSbE8JH6olu09Ej4Yc92hrgHB2jh04wQQ",
-    authDomain: "coffee-shop-c124f.firebaseapp.com",
-    projectId: "coffee-shop-c124f",
-    storageBucket: "coffee-shop-c124f.appspot.com",
-    messagingSenderId: "546904036685",
-    appId: "1:546904036685:web:1c0530824f228f72849304",
-    measurementId: "G-Y6H5WQJMG3"
+    apiKey: "AIzaSyCDj5RzphqO_wC-fSWrqSUo3ffNGQFsKrs",
+    authDomain: "coffee-shop-69af4.firebaseapp.com",
+    projectId: "coffee-shop-69af4",
+    storageBucket: "coffee-shop-69af4.firebasestorage.app",
+    messagingSenderId: "281527813455",
+    appId: "1:281527813455:web:ea1a52942fb0c3ccdaf13a"
 };
 
 const App = initializeApp(FirebaseConfig);
