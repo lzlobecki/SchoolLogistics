@@ -1,5 +1,6 @@
  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js";
 import { getAuth, sendSignInLinkToEmail, isSignInWithEmailLink, signInWithEmailLink } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-auth.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-analytics.js";
 
 const FirebaseConfig = {
     apiKey: "AIzaSyCDj5RzphqO_wC-fSWrqSUo3ffNGQFsKrs",
@@ -7,10 +8,12 @@ const FirebaseConfig = {
     projectId: "coffee-shop-69af4",
     storageBucket: "coffee-shop-69af4.firebasestorage.app",
     messagingSenderId: "281527813455",
-    appId: "1:281527813455:web:ea1a52942fb0c3ccdaf13a"
-};
+    appId: "1:281527813455:web:ea1a52942fb0c3ccdaf13a",
+    measurementId: "G-Y3M8HYC592"
+  };
 
 const App = initializeApp(FirebaseConfig);
+const Analytics = getAnalytics(App)
 const Auth = getAuth(App);
 
 const EmailLoginForm = document.getElementById('email-login-form');
