@@ -21,16 +21,23 @@
   a {
       text-decoration: none;
   }
-  button {
-      background: #0071E3;
-      color: #fff;
-      border: none;
-      border-radius: 980px;
-      cursor: pointer;
-  }
-  button:hover {
-      background: #147ce5;
-  }
+ .button {
+    display: inline-block;
+    padding: 6px 14px; /* Smaller padding for minimal look */
+    font-size: 0.9em;
+    background-color: transparent; /* Minimal background */
+    color: #ea0029; /* Set to a primary color for visibility */
+    border: 1px solid #ea0029; /* Minimal border */
+    border-radius: 5px; /* Slight rounding for a sleek look */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ea0029; /* Light background on hover */
+    color: white; /* Text turns white on hover */
+}
+
   button:active {
       background: #0068d1;
   }
@@ -157,15 +164,15 @@
       width: 100%;
       background: #fff;
       backdrop-filter: saturate(180%) blur(20px);
-      z-index: 100;
+      z-index: 100; 
   }
   .local-nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
       width: 1000px;
-      padding-top: 18px;
-      padding-bottom: 18px;
+      padding-top: 50px;
+      padding-bottom: 5px;
       margin-left: auto;
       margin-right: auto;
   }
@@ -195,28 +202,28 @@
       opacity: .56;
   }
   .landing {
+    position: relative; /* Allows positioning of inner elements */
     background-image: url("Slideshow/crewbrewlogo.png"); /* Default background image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 60vh; /* Adjust as needed */
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 5px;
-    height: 75vh; /* Adjust as needed, e.g., 60vh, 50vh, or a fixed value like 600px */
+    justify-content: flex-start; /* Aligns items to the start vertically */
+    align-items: flex-start; /* Aligns items to the top initially */
     transition: background-image 0.5s ease-in-out;
 }
 
+/* Position the text container to the bottom-left */
+.landing .text {
+    position: absolute;
+    bottom: 50px; /* Adjust as needed for spacing from the bottom */
+    left: 250px; /* Adjust as needed for spacing from the left */
+    text-align: center; /* Align text to the left */
+    max-width: 5000px; /* Optional: limit width for readability */
+    color: white; /* Ensures text is visible on slideshow */
 }
 
-
-  .landing .text {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 13px;
-  }
   .landing .text h4 {
       font-size: 24px;
       font-weight: 600;
@@ -1243,24 +1250,7 @@
       .how img {
           width: 50% !important;
       }
-      footer .footer-features {
-          flex-direction: column;
-          width: 100%;
-      }
-      footer .footer-features .footer-feature {
-          width: 100%;
-      }
-      footer .boring .bottom .legal {
-          flex-direction: column-reverse;
-          gap: 12px;
-      }
-      footer .boring .bottom .legal .left {
-          flex-direction: column;
-          gap: 10px;
-      }
-      footer .footer-features .footer-feature {
-          min-width: 100%;
-      }
+     
   }
   .button {
       display: inline-block;
@@ -1439,12 +1429,13 @@
       max-width: 1200px;
   }
   .local-nav .logo {
-      height: 60px; /* Adjust the size as needed */
-      width: auto;
-      padding-top: 1px; /* Adds space above the logo */
-      margin-top: 1px; /* Adds more space if needed */
-      max-width: 100%; /* Ensures it scales properly */
-  }
+    height: 80px; /* Adjust as needed, e.g., 60px or 80px */
+    width: auto;
+    padding-top: 5px; /* Adds space above the logo */
+    padding-bottom: 5px; /* Adds space below the logo */
+    margin-top: 0; /* Adjust or add if necessary */
+}
+
   .local-nav .right {
       display: flex;
       align-items: center;
@@ -1462,6 +1453,120 @@
     object-fit: cover;
 }
 
-  
-  /* anitmation */
-  
+  /* Footer Styling */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #ea0029;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #bbb;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+
+  /* Options Section */
+.options-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    position: relative;
+    height: 100vh;
+    align-items: center;
+    overflow: hidden;
+    transition: background-color 0.5s ease; /* Smooth background transition */
+}
+
+/* Button Styling */
+.option-button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+    position: relative;
+    z-index: 1; /* Ensures buttons are above background effect */
+}
+
+.option-button:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Button Colors */
+.blue { background-color: #007BFF; }    /* Blue for Programmers */
+.green { background-color: #28A745; }   /* Green for Marketing */
+.red { background-color: #DC3545; }     /* Red for Our Students */
+.grey { background-color: #6C757D; }    /* Grey for Our Admins */
+
+/* Background Hover Aura Effect */
+.options-section:hover .blue:hover ~ .options-section {
+    background-color: rgba(0, 123, 255, 0.1); /* Light blue background */
+}
+
+.options-section:hover .green:hover ~ .options-section {
+    background-color: rgba(40, 167, 69, 0.1); /* Light green background */
+}
+
+.options-section:hover .red:hover ~ .options-section {
+    background-color: rgba(220, 53, 69, 0.1); /* Light red background */
+}
+
+.options-section:hover .grey:hover ~ .options-section {
+    background-color: rgba(108, 117, 125, 0.1); /* Light grey background */
+}
