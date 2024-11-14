@@ -195,7 +195,7 @@
       opacity: .56;
   }
   .landing {
-    background-image: url("Files/crewbrew\ logo.jpeg"); /* Default background image */
+    background-image: url("Slideshow/crewbrewlogo.png"); /* Default background image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -204,8 +204,10 @@
     align-items: center;
     justify-content: center;
     padding-top: 5px;
-    height: 100vh;
+    height: 75vh; /* Adjust as needed, e.g., 60vh, 50vh, or a fixed value like 600px */
     transition: background-image 0.5s ease-in-out;
+}
+
 }
 
 
