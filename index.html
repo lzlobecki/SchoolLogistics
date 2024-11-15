@@ -4,13 +4,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>FHS: Exceptional Coffee Shop</title>
-    <link rel="shortcut icon" href="Files/fhscoffeelogo" type="image/png">
+    <link rel="shortcut icon" href="Files/fhscoffeelogo.png" type="image/png">
         <link rel="stylesheet" href="style.css">
 	
 
   </head>
 
   <body>
+
+
+   <!-- Splash Screen -->
+<div class="splash-screen">
+    <div class="splash-text">
+      <h1>Fishers Coffee Shop</h1>
+      <h2>by CrewBrew</h2>
+    </div>
+  </div>
+  
+  <script>
+    // Wait for the page to load
+    window.addEventListener("load", () => {
+      const splashScreen = document.querySelector(".splash-screen");
+  
+      // Wait 2 seconds, then fade out the splash screen
+      setTimeout(() => {
+        splashScreen.classList.add("hidden");
+      }, 1500); // 2000ms = 2 seconds
+    });
+  </script>
+  
+
+
     <nav> <!--HEADER-->
         <div class="local-nav-wrapper">
             <div class="local-nav">
@@ -44,11 +68,71 @@
             <h1>‎ </h1>
             <h4>‎ </h4>
             <h6>‎ </h6>
-            <h2><span class="accent-fishers">Empowering </span><span class="accent-white">Through Every Cup. </span></h2>
+            <h2><span class="accent-fishers">Empowering </span><span class="accent-white">Through Every Cup </span></h2>
             <h6>‎ </h6>
             <p class="landing-price">Est. 2024 by class of 2026 - Fishers High School</p>
             <h6>‎ </h6>
-            <button class="button" onclick="redirectToShop()">Shop Now!</button>
+          <!--  <button class="button" onclick="redirectToShop()">Shop Now!</button> -->
+            <button class="button" onclick="redirectToShop()">
+                SHOP NOW!
+                <div class="star star-1">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 784.11 815.53">
+                        <path class="fil0"
+                            d="M392.05 0c-20.9,210.08 -184.06,
+                               378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,
+                               407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,
+                               -29.38 -371.16,-197.69 -392.06,-407.78z" />
+                    </svg>
+                </div>
+                <div class="star star-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53">
+                        <path class="fil0"
+                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,
+                               407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,
+                               -210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,
+                               -197.69 -392.06,-407.78z" />
+                    </svg>
+                </div>
+                <div class="star star-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                         viewBox="0 0 784.11 815.53">
+                        <path class="fil0"
+                            d="M392.05 0c-20.9,210.08 -184.06,
+                               378.41 -392.05,407.78 207.96,29.37 371.12,197.68 
+                               392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,
+                               -407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" />
+                    </svg>
+                </div>
+                <div class="star star-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53">
+                        <path class="fil0"
+                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,
+                               29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 
+                               392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                              />
+                    </svg>
+                </div>
+                <div class="star star-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53">
+                        <path class="fil0"
+                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,
+                               29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37
+                               392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                              />
+                    </svg>
+                </div>
+                <div class="star star-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53">
+                        <path class="fil0"
+                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,
+                               29.37 371.12,197.68 392.05,407.74 20.93,
+                               -210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,
+                               -197.69 -392.06,-407.78z" />
+                    </svg>
+                </div>
+            </button>
+
         </div>
     </section>
     
@@ -96,11 +180,11 @@
         <div class="footer-section links">
             <h3>Quick Links</h3>
             <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="/index.html"> Home</a> </li>
+                <li><a href="/about/index.html">About Us</a></li>
+                <li><a href="/">Specials</a></li>
+                <li><a href="/shop/index.html">Shop</a></li>
+                <li><a href="/about/">Contact</a></li>
             </ul>
         </div>
 

@@ -21,16 +21,17 @@
   a {
       text-decoration: none;
   }
- .button {
+ /*.button {
     display: inline-block;
-    padding: 6px 14px; /* Smaller padding for minimal look */
+    padding: 6px 14px; 
     font-size: 0.9em;
-    background-color: transparent; /* Minimal background */
-    color: #ea0029; /* Set to a primary color for visibility */
-    border: 1px solid #ea0029; /* Minimal border */
-    border-radius: 5px; /* Slight rounding for a sleek look */
+    background-color: transparent; 
+    color: #ea0029; 
+    border: 1px solid #ea0029;
+
+    border-radius: 5px; 
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;  */
 }
 
 .button:hover {
@@ -55,14 +56,14 @@
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
       }
-  .accent-fishers {
+  .accent-coffee {
       
           background: -webkit-linear-gradient(#967259, #ece0d1);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
       }
   .accent-fishers {
-          background: -webkit-linear-gradient(#ea0029, #b6babe);
+          background: -webkit-linear-gradient(#99021e, #dc082f, #b6babe);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
       }
@@ -203,7 +204,7 @@
   }
   .landing {
     position: relative; /* Allows positioning of inner elements */
-    background-image: url("Slideshow/crewbrewlogo.png"); /* Default background image */
+    background-image: url("Slideshow/BackgroundDefault.png"); /* Default background image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -218,7 +219,7 @@
 .landing .text {
     position: absolute;
     bottom: 50px; /* Adjust as needed for spacing from the bottom */
-    left: 250px; /* Adjust as needed for spacing from the left */
+    left: 225px; /* Adjust as needed for spacing from the left */
     text-align: center; /* Align text to the left */
     max-width: 5000px; /* Optional: limit width for readability */
     color: white; /* Ensures text is visible on slideshow */
@@ -1252,16 +1253,16 @@
       }
      
   }
-  .button {
+  /*.button {
       display: inline-block;
       padding: 10px 20px;
       font-size: 1em;
-      background-color: #ea0029; /* Blue color */
+      background-color: #ea0029; 
       color: white;
       border: none;
-      border-radius: 20px; /* Squarcle shape with rounded corners */
+      border-radius: 20px; 
       cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.2s ease;
+      transition: background-color 0.3s ease, transform 0.2s ease; */
   }
   .button:hover {
       background-color: #ece0d1; /* Darker blue on hover */
@@ -1529,6 +1530,15 @@
     transition: background-color 0.5s ease; /* Smooth background transition */
 }
 
+/* Options Section for Side-by-Side Layout */
+.options-section {
+    display: flex;
+    justify-content: center; /* Aligns buttons horizontally */
+    flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+    gap: 20px; /* Adds spacing between buttons */
+    padding: 20px;
+}
+
 /* Button Styling */
 .option-button {
     padding: 15px 25px;
@@ -1542,6 +1552,7 @@
     transition: transform 0.3s ease, color 0.3s ease;
     position: relative;
     z-index: 1; /* Ensures buttons are above background effect */
+    min-width: 150px; /* Ensures consistent button width */
 }
 
 .option-button:hover {
@@ -1549,28 +1560,153 @@
 }
 
 /* Button Colors */
-.orange { background-color: #FFA500; }    /* Blue for NextUp video */
-.blue { background-color: #007BFF; }    /* Blue for Programmers */
-.green { background-color: #28A745; }   /* Green for Marketing */
-.red { background-color: #DC3545; }     /* Red for Our Students */
-.grey { background-color: #6C757D; }    /* Grey for Our Admins */
+.orange { background-color: #FFA500; }    /* Orange for Next-Up Video */
+.blue { background-color: #007BFF; }      /* Blue for Programmers */
+.green { background-color: #28A745; }     /* Green for Marketing */
+.red { background-color: #DC3545; }       /* Red for Our Students */
+.grey { background-color: #6C757D; }      /* Grey for Our Admins */
 
 /* Background Hover Aura Effect */
-.options-section:hover .orange:hover ~ .options-section {
-    background-color: rgba(0, 123, 255, 0.1); /* Light blue background */
+.options-section:hover .orange:hover {
+    background-color: rgba(255, 165, 0, 0.9); /* Stronger orange on hover */
 }
-.options-section:hover .blue:hover ~ .options-section {
-    background-color: rgba(0, 123, 255, 0.1); /* Light blue background */
+.options-section:hover .blue:hover {
+    background-color: rgba(0, 123, 255, 0.9); /* Stronger blue on hover */
+}
+.options-section:hover .green:hover {
+    background-color: rgba(40, 167, 69, 0.9); /* Stronger green on hover */
+}
+.options-section:hover .red:hover {
+    background-color: rgba(220, 53, 69, 0.9); /* Stronger red on hover */
+}
+.options-section:hover .grey:hover {
+    background-color: rgba(108, 117, 125, 0.9); /* Stronger grey on hover */
 }
 
-.options-section:hover .green:hover ~ .options-section {
-    background-color: rgba(40, 167, 69, 0.1); /* Light green background */
+
+/* Full-Screen Splash Screen */
+.splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1f1e1e; /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensures it's above everything */
+    opacity: 1; /* Initially visible */
+    transition: opacity 1s ease; /* Smooth fade-out effect */
+  }
+  
+  /* Centered Splash Text */
+  .splash-text {
+    text-align: center;
+    color: white;
+  }
+  
+  .splash-text h1 {
+    font-size: 2.5rem; /* Main heading size */
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif; /* Change to match your theme */
+  }
+  
+  .splash-text h2 {
+    font-size: 1.5rem; /* Subheading size */
+    font-family: Arial, sans-serif; /* Change to match your theme */
+  }
+  
+  /* Fade Out Effect */
+  .splash-screen.hidden {
+    opacity: 0; /* Fades out */
+    pointer-events: none; /* Makes it non-interactive */
+  }
+  
+
+  ---------
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    margin: 0;
 }
 
-.options-section:hover .red:hover ~ .options-section {
-    background-color: rgba(220, 53, 69, 0.1); /* Light red background */
+button {
+    position: relative;
+    padding: 12px 35px;
+    background: #ea0029;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff;
+    border: 3px solid #ea0029;
+    border-radius: 8px;
+    box-shadow: 0 0 0 #fec1958c;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
-.options-section:hover .grey:hover ~ .options-section {
-    background-color: rgba(108, 117, 125, 0.1); /* Light grey background */
+.star {
+    position: absolute;
+    width: 0;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -1;
+    transition: all 0.5s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+}
+
+button:hover {
+    background: transparent;
+    color: #5a5950;
+    box-shadow: 0 0 25px #fec1958c;
+    transform: scale(1.1);
+}
+
+button:hover .star-1 {
+    top: -80%;
+    left: -30%;
+    width: 25px;
+    filter: drop-shadow(0 0 10px #fffdef);
+}
+
+button:hover .star-2 {
+    top: -25%;
+    left: 10%;
+    width: 15px;
+    filter: drop-shadow(0 0 10px #fffdef);
+}
+
+button:hover .star-3 {
+    top: 55%;
+    left: 25%;
+    width: 5px;
+    filter: drop-shadow(0 0 10px #fffdef);
+}
+
+button:hover .star-4 {
+    top: 30%;
+    left: 80%;
+    width: 8px;
+    filter: drop-shadow(0 0 10px #fffdef);
+}
+
+button:hover .star-5 {
+    top: 25%;
+    left: 115%;
+    width: 15px;
+    filter: drop-shadow(0 0 10px #fffdef);
+}
+
+button:hover .star-6 {
+    top: 5%;
+    left: 60%;
+    width: 5px;
+    filter: drop-shadow(0 0 10px #fffdef);
+}
+
+.fil0 {
+    fill: #fffdef;
 }
