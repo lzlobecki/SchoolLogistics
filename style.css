@@ -1549,12 +1549,16 @@
 }
 
 /* Button Colors */
+.orange { background-color: #FFA500; }    /* Blue for NextUp video */
 .blue { background-color: #007BFF; }    /* Blue for Programmers */
 .green { background-color: #28A745; }   /* Green for Marketing */
 .red { background-color: #DC3545; }     /* Red for Our Students */
 .grey { background-color: #6C757D; }    /* Grey for Our Admins */
 
 /* Background Hover Aura Effect */
+.options-section:hover .orange:hover ~ .options-section {
+    background-color: rgba(0, 123, 255, 0.1); /* Light blue background */
+}
 .options-section:hover .blue:hover ~ .options-section {
     background-color: rgba(0, 123, 255, 0.1); /* Light blue background */
 }
