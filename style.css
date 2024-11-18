@@ -173,7 +173,7 @@
       align-items: center;
       justify-content: space-between;
       width: 1000px;
-      padding-top: 3%;
+      padding-top: 5%;
       padding-bottom: 1%;
       margin-left: auto;
       margin-right: auto;
@@ -204,10 +204,10 @@
       opacity: .56;
   }
   .landing {
-    background-image: url("Files/crewbrewxfhs\ logo.png");
+    background-image: url("Files/crewbrewxfhs\\ logo.png");
     position: relative;
-    background-size: cover;
-    background-position: center;
+    background-size: cover; /* Scale the image to be fully visible */
+    background-position: center; /* Center the image */
     background-repeat: no-repeat;
     height: 100vh;
     display: flex;
@@ -218,6 +218,22 @@
     transition: background-image 0.5s ease-in-out;
   }
   
+  @keyframes slideBackground {
+    0% {
+        background-position: -100% center; /* Starting position (off-screen) */
+    }
+    50% {
+        background-position: 50% center; /* Halfway through the animation */
+    }
+    100% {
+        background-position: center; /* End position (centered) */
+    }
+}
+
+landing:hover {
+    animation: slideBackground 2s ease-in-out infinite; /* Apply the sliding animation */
+}
+
   .landing .text {
     position: relative;
     max-width: 90%; /* Flexible width */
@@ -1739,3 +1755,4 @@ body {
         background-position: 0 10000px;
     }
 }
+
