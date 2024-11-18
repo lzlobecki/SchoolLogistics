@@ -1712,3 +1712,30 @@ button:hover .star-6 {
     fill: #fffdef;
 }
 /* Sticky Navigation Styling */
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.parallax-stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Files/coffee\ icon.jpeg') repeat;
+    background-size: cover;
+    z-index: -1;
+    animation: moveStars 50s linear infinite;
+}
+
+@keyframes moveStars {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 10000px;
+    }
+}
