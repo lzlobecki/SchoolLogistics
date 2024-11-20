@@ -24,13 +24,13 @@
   }
  /*.button {
     display: inline-block;
-    padding: 6px 14px; 
+    padding: 0.375rem 0.875rem; 
     font-size: 0.9em;
     background-color: transparent; 
     color: #ea0029; 
-    border: 1px solid #ea0029;
+    border: 0.0625rem solid #ea0029;
 
-    border-radius: 5px; 
+    border-radius: 0.3125rem; 
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;  */
 }
@@ -44,12 +44,12 @@
       background: #0068d1;
   }
   button.small {
-      padding: 4px 11px;
-      font-size: 12px;
+      padding: 2% 9%;
+      font-size: 0.75rem;
   }
   button.normal {
-      padding: 8px 16px;
-      font-size: 17px;
+      padding: 2% 4%;
+      font-size: 1.063rem;
   }
   .accent-white {
       /*  color: #01A9F4; */
@@ -69,30 +69,30 @@
           -webkit-text-fill-color: transparent;
       }
   h1 {
-      font-size: 96px;
+      font-size: 6rem;
       /* max-width: 60%; */
       text-align: center;
       font-family: 'SF Pro Display', sans-serif;
       font-weight: bold;
   }
   h2 {
-      font-size: 64px;
+      font-size: 4rem;
       font-family: 'SF Pro Display', sans-serif;
       font-weight: bold;
   }
   h3 {
-      font-size: 28px;
+      font-size: 1.75rem;
       font-weight: 500;
       font-family: 'SF Pro Display', sans-serif;
       font-weight: bold;
   }
   h4 {
-      font-size: 48px;
+      font-size: 3rem;
       font-weight: bold;
       font-family: 'SF Pro Display', sans-serif;
   }
   h6 {
-      font-size: 24px;
+      font-size: 1.4rem;
       font-weight: 600;
       font-family: 'SF Pro Display', sans-serif;
   }
@@ -102,11 +102,11 @@
       align-items: center;
       justify-content: center;
       padding: 10%;
-      gap: 122px;
+      gap: 7.625rem;
   }
   section .feature {
       display: flex;
-      gap: 22px;
+      gap: 1.375rem;
       align-items: center;
       max-width: 90%;
   }
@@ -120,8 +120,8 @@
       background: #333333;
       display: flex;
       width: 100%;
-      height: 44px;
-      gap: 3%;
+      height: 2.75rem;
+      gap: 2%;
       align-items: center;
       justify-content: center;
   }
@@ -129,18 +129,18 @@
       display: none;
       flex-direction: column;
       justify-content: center;
-      gap: 8px;
-      width: 20px;
-      height: 20px;
+      gap: 0.5rem;
+      width: 1.25rem;
+      height: 1.25rem;
   }
   nav .hamburger .line {
       width: 100%;
-      height: 1px;
+      height: 0.0063rem;
       background: #f5f5f7;
   }
   nav a {
       color: #f5f5f7;
-      font-size: 12px;
+      font-size: 0.75rem;
       opacity: .8;
       transition: opacity 0.3s;
   }
@@ -157,22 +157,22 @@
       fill: #fff; 
   }
   nav a.apple-logo {
-      font-size: 22px;
+      font-size: 1.375rem;
   }
   .local-nav-wrapper {
-      border-bottom: 1px solid #fff1ff;
+      border-bottom: 0.063rem solid #fff1ff;
       position: sticky;
       top: 0;
       width: 100%;
       background: #fff;
-      backdrop-filter: saturate(180%) blur(20px);
+      backdrop-filter: saturate(180%) blur(1.25rem);
       z-index: 100; 
   }
   .local-nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 1000px;
+      width: 62.5rem;
       padding-top: 5%;
       padding-bottom: 1%;
       margin-left: auto;
@@ -180,22 +180,22 @@
   }
   .local-nav h4 {
       color: #ffffff;
-      font-size: 21px;
+      font-size: 1.313rem;
       font-weight: 600;
   }
   .local-nav .right {
       display: flex;
-      gap: 22px;
+      gap: 1.373rem;
       align-items: center;
   }
   .local-nav svg {
-      width: 30px;
+      width: 1.875rem;
       display: none;
       transform: scaleX(1.2);
   }
   .local-nav .right a {
       color: #000;
-      font-size: 12px;
+      font-size: 0.75rem;
   }
   .local-nav .right a:hover {
       color: #06c;
@@ -243,16 +243,16 @@ landing:hover {
   
 
   .landing .text h4 {
-      font-size: 24px;
+      font-size: 1.25rem;
       font-weight: 600;
   }
   .landing .text p {
       color: #86868B;
-      font-size: 14px;
+      font-size: 0.8rem;
   }
   .landing .chip-container {
       display: flex;
-      gap: 14px;
+      gap: 0.8rem;
       align-items: center;
   }
   .landing .chip-container h3 {
@@ -301,11 +301,11 @@ landing:hover {
       align-items: center;
       height: 100vh;
       width: 100%;
-      gap: 44px;
+      gap: 22.75rem;
   }
   .colors .container > * {
       background: #fff;
-      border-radius: 30px;
+      border-radius: 1.875rem;
       width: 50%;
       height: 100%;
       display: flex;
@@ -313,18 +313,18 @@ landing:hover {
       align-items: center;
   }
   .colors .container .left {
-      gap: 44px;
+      gap: 2.75rem;
   }
   .colors .container .right {
       flex-direction: column;
-      gap: 44px;
+      gap: 2.75rem;
       background: transparent;
   }
   .colors .container .right > * {
       width: 100%;
       height: 50%;
       background: #fff;
-      border-radius: 30px;
+      border-radius: 18.75rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -332,28 +332,28 @@ landing:hover {
   .colors .container .left .colors-picker {
       display: flex;
       flex-direction: column;
-      gap: 11px;
+      gap: 0.688rem;
   }
   .colors .container .left .colors-picker .color-container {
       display: flex;
       flex-direction: column;
-      gap: 7px;
+      gap: 0.4337rem;
       justify-content: center;
       align-items: center;
   }
   .colors .container .left .colors-picker .color-container p {
-      font-size: 12px;
+      font-size: 0.75rem;
   }
   .colors .container .left .colors-picker .color-container .color {
       border-radius: 50%;
-      width: 32px;
-      height: 32px;
-      box-shadow: 0px 0px 1px 1px #0000001A inset;
+      width: 2rem;
+      height: 2rem;
+      box-shadow: 0rem 0rem 0.0625rem 0.0625rem #0000001A inset;
   }
   .colors .container .left .colors-picker .color-container .color.blue {
       background: #01A9F4;
-      outline: 2px solid #0071E3;
-      outline-offset: 2px;
+      outline: 0.125rem solid #0071E3;
+      outline-offset: 0.125rem;
   }
   .colors .container .left .colors-picker .color-container .color.midnight {
       background: #002030;
@@ -369,56 +369,56 @@ landing:hover {
   }
   .sizes h1 .letter-container {
       display: inline-flex;
-      gap: 1px;
+      gap: 0.0625rem;
       align-items: center;
       position: relative;
-      top: -20px;
+      top: -1.25rem;
   }
   .sizes h1 .mini {
       color: #01A9F4;
-      font-size: 63px;
+      font-size: 4rem;
   }
   .sizes h1 .regular {
       color: #0A97D6;
-      font-size: 83px;
+      font-size: 5.188rem;
   }
   .sizes h1 .pro {
       color: #0C8AC2;
-      font-size: 103px;
+      font-size: 6.438rem;
   }
   .sizes h1 .max {
       color: #0C74A3;
-      font-size: 123px;
+      font-size: 7.688rem;
   }
   .sizes h1 .ultra {
       color: #085A7E;
-      font-size: 143px;
+      font-size: 8.938rem;
   }
   .sizes .container {
       display: flex;
-      gap: 80px;
+      gap: 5rem;
   }
   .sizes .container .size {
       display: flex;
       flex-direction: column;
-      gap: 22px;
+      gap: 1.375rem;
       align-items: center;
       justify-content: center;
   }
   .sizes .container .size.mini img {
-      width: 46px;
+      width: 2.875rem;
   }
   .sizes .container .size.regular img {
-      width: 104px;
+      width: 6.5rem;
   }
   .sizes .container .size.pro img {
-      width: 143px;
+      width: 8.938rem;
   }
   .sizes .container .size.max img {
-      width: 188px;
+      width: 11.75rem;
   }
   .sizes .container .size.ultra img {
-      width: 266px;
+      width: 16.62rem;
   }
   .sizes .floating .bottle {
       display: flex;
@@ -426,23 +426,23 @@ landing:hover {
       align-items: center;
   }
   .sizes .floating .bottle.mini h1 {
-      font-size: 63px;
+      font-size: 3.938rem;
       color: #01A9F4;
   }
   .sizes .floating .bottle.regular h1 {
-      font-size: 63px;
+      font-size: 3.938rem;
       color: #0A97D6;
   }
   .sizes .floating .bottle.pro h1 {
-      font-size: 103px;
+      font-size: 6.438rem;
       color: #0C8AC2;
   }
   .sizes .floating .bottle.max h1 {
-      font-size: 123px;
+      font-size: 7.688rem;
       color: #0C74A3;
   }
   .sizes .floating .ultra h1 {
-      font-size: 143px;
+      font-size: 8.938rem;
       color: #085A7E;
   }
   .fits-in-life .full-images {
@@ -460,11 +460,11 @@ landing:hover {
       align-items: center;
   }
   .w1 .top img:last-child {
-      margin-top: -50px;
+      margin-top: -3.125rem;
   }
   .w1 .header {
       display: flex;
-      gap: 10px;
+      gap: 0.625rem;
       align-items: center;
       flex-wrap: wrap;
       justify-content: center;
@@ -480,7 +480,7 @@ landing:hover {
     -webkit-text-fill-color: transparent;
       text-align: center;
       display: flex;
-      gap: 8px;
+      gap: 0.5rem;
   }
   .w1 .header h1:last-child {
     color: #E2E4F5;
@@ -494,7 +494,7 @@ landing:hover {
   .w1 .containers {
       display: flex;
       flex-direction: column;
-      gap: 44px;
+      gap: 2.75rem;
   }
   .w1 .container, .w1 .container-double {
       display: flex;
@@ -502,17 +502,17 @@ landing:hover {
       justify-content: center;
       align-items: center;
       background: #333336;
-      padding: 93px 117px;
-      border-radius: 30px;
-      gap: 45px;
+      padding: 10% 50%;
+      border-radius: 1.875rem;
+      gap: 2.812rem;
   }
   .w1 .container img {
-      margin-top: -200px;
+      margin-top: -12.5rem;
       z-index: 1;
   }
   .w1 .container .stats {
       display: flex;
-      gap: 80px;
+      gap: 5rem;
       width: 100%;
       justify-content: left;
   }
@@ -532,18 +532,18 @@ landing:hover {
   .w1 .container-double {
       flex-direction: row;
       background: none;
-      gap: 44px;
+      gap: 2.75rem;
       padding: 0;
   }
   .w1 .container-double .inner {
       background: #333336;
-      border-radius: 30px;
+      border-radius: 1.875rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 46px;
+      padding: 20%;
       width: 50%;
-      height: 490px;
+      height: 30.62rem;
   }
   .w1 .container h1, .w1 .inner h4 {
       background: -webkit-linear-gradient(#01A9F4, #B5E8FF);
@@ -556,7 +556,7 @@ landing:hover {
       z-index: auto !important;
   }
   .w1 .container-double .inner img {
-      margin-top: -130px;
+      margin-top: -8.125rem;
       z-index: 1;
   }
   .apple-cup .header {
@@ -588,7 +588,7 @@ landing:hover {
   }
   .how h1 {
       display: flex;
-      gap: 20px;
+      gap: 1.25rem;
   }
   .how .left {
       display: flex;
@@ -599,43 +599,43 @@ landing:hover {
       align-items: flex-end;
   }
   .how h1 .left span:nth-child(1) {
-      font-size: 56px;
+      font-size: 3.5rem;
       color: #DBDBDA;
   }
   .how h1 .left span:nth-child(2) {
-      font-size: 66px;
+      font-size: 4.125rem;
       color: #BDBDB9;
   }
   .how h1 .left span:nth-child(3) {
-      font-size: 76px;
+      font-size: 4.75rem;
       color: #A0A09B;
   }
   .how h1 .left span:nth-child(4) {
-      font-size: 86px;
+      font-size: 5.375rem;
       color: #8C8C86;
   }
   .how h1 .left span:nth-child(5) {
-      font-size: 96px;
+      font-size: 6rem;
       color: #686860;
   }
   .how h1 .right span:nth-child(5) {
-      font-size: 56px;
+      font-size: 3.5rem;
       color: #DBDBDA;
   }
   .how h1 .right span:nth-child(4) {
-      font-size: 66px;
+      font-size: 4.125rem;
       color: #8C8C86;
   }
   .how h1 .right span:nth-child(3) {
-      font-size: 76px;
+      font-size: 4.75rem;
       color: #A0A09B;
   }
   .how h1 .right span:nth-child(2) {
-      font-size: 86px;
+      font-size: 5.375rem;
       color: #8C8C86;
   }
   .how h1 .right span:nth-child(1) {
-      font-size: 96px;
+      font-size: 6rem;
       color: #686860;
   }
   .how h1 > span {
@@ -654,21 +654,21 @@ landing:hover {
   }
   .touch-id .container {
       display: flex;
-      gap: 44px;
+      gap: 2.75rem;
   }
   .touch-id .container .inner {
       position: relative;
       
       background: #333336;
-      border-radius: 30px;
+      border-radius: 1.875rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 46px;
+      padding: 2.875rem;
       width: 50%;
-      gap: 44px;
-  /*  height: 490px; */
+      gap: 2.75rem;
+  /*  height: 30.62rem; */
   }
   .touch-id .container .inner > *:not(img) {
       z-index: 2;
@@ -700,24 +700,24 @@ landing:hover {
   .end .boxes {
       display: flex;
       flex-direction: column;
-      gap: 44px;
+      gap: 2.75rem;
       align-items: center;
   }
   .end .container {
       display: flex;
-      height: 500px;
+      height: 31.25rem;
       justify-content: left;
       align-items: center;
       background: #fff;
-      border-radius: 30px;
-      padding: 46px;
+      border-radius: 1.875rem;
+      padding: 2.875rem;
       position: relative;
-      font-size: 19px;
+      font-size: 1.188rem;
       max-width: 100%;
   }
   .end .container .text {
       display: flex;
-      gap: 22px;
+      gap: 1.375rem;
       flex-direction: column;
       width: 50%;
   }
@@ -725,14 +725,14 @@ landing:hover {
       color: #03A10E;
   }
   .end .link-container .size  .chevron {
-      font-size: 10px; 
+      font-size: 0.625rem; 
   }
   .end .container > img {
       position: absolute;
       right: 0;
       width: 30%;
       bottom: 0;
-      margin-right: 46px;
+      margin-right: 2.875rem;
       max-height: 90%;
   }
   .end .container.earth > img {
@@ -746,32 +746,32 @@ landing:hover {
   /*  max-height: revert; */
   }
   .end .container .text img:not(.link-container img) {
-      width: 62px;
+      width: 3.875rem;
   }
   .end .grid {
       display: flex;
       flex-direction: column;
-      gap: 44px;
+      gap: 2.75rem;
   }
   .end .grid .row {
       display: flex;
-      gap: 44px;
+      gap: 2.75rem;
   }
   .end .grid .row .inner {
       display: flex;
       justify-content: left;
   /*  align-items: center; */
       background: #fff;
-      border-radius: 30px;
-      padding: 46px;
+      border-radius: 1.875rem;
+      padding: 2.875rem;
       flex-direction: column;
-      gap: 23px;
+      gap: 1.438rem;
       width: 50%;
-      font-size: 19px;
+      font-size: 1.188rem;
   }
   .end .grid .row .inner .header {
       display: flex;
-      gap: 8px;
+      gap: 0.5rem;
       algin-items: center;
   }
   .end .grid .row .inner.safety h4 {
@@ -783,13 +783,13 @@ landing:hover {
   .end .grid .row .inner .text {
       display: flex;
       flex-direction: column;
-      gap: 13px;
+      gap: 0.8125rem;
   }
   .link-container span:first-child:hover {
       text-decoration: underline;
   }
   .link-container .chevron {
-      font-size: 14px;
+      font-size: 0.875rem;
   }
   .end .which {
       flex-direction: column;
@@ -797,7 +797,7 @@ landing:hover {
   }
   .end .which .sizes {
       display: flex;
-      gap: 20px;
+      gap: 1.25rem;
       justify-content: center;
       align-items: flex-end;
       background: none;
@@ -805,71 +805,71 @@ landing:hover {
   .end .which .sizes .size {
       display: flex;
       flex-direction: column;
-      gap: 22px;
+      gap: 1.375rem;
       justify-content: center;
       align-items: center;
   }
   .end .which .sizes .size.mini {
-      width: 200px;
+      width: 12.5rem;
   }
   .end .which .sizes .size.mini img {
-      width: 30px;
+      width: 1.875rem;
   }
   .end .which .sizes .size.classic img {
-      width: 50px;
+      width: 3.125rem;
   }
   .end .which .sizes .size.pro img {
-      width: 80px;
+      width: 5rem;
   }
   .end .which .sizes .size.max img {
-      width: 110px;
+      width: 6.875rem;
   }
   .end .which .sizes .size.ultra img {
-      width: 150px;
+      width: 9.375rem;
   }
   .end .which .sizes .size .middle {
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 1.875rem;
       justify-content: center;
       align-items: center;
   }
   .end .which .sizes .size .middle .inner {
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      gap: 0.25rem;
       justify-content: center;
       align-items: center;
   }
   .end .which .sizes .size .middle .inner p {
-      font-size: 17px;    
+      font-size: 1.062rem;    
       text-align: center;
   }
   .end .which .sizes .size .bottom p.price {
-      font-size: 14px;    
+      font-size: 0.875rem;    
   }
   .end .which .sizes .size .link-container span:first-child {
-      font-size: 14px;    
+      font-size: 0.875rem;    
   }
   .end .which .sizes .size .middle .colors {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      gap: 8px;
+      gap: 0.5rem;
       background: none;
   }
   .end .which .sizes .size .middle .colors .row {
       display: flex;
-      gap: 8px;
+      gap: 0.5rem;
       align-items: center;
       justify-content: center;
   }
   .end .which .sizes .size .middle .colors .color {
       border-radius: 50%;
-      width: 14px;
-      height: 14px;
-      box-shadow: 0px 0px 1px 1px #0000001a inset;
+      width: 0.875rem;
+      height: 0.875rem;
+      box-shadow: 0rem 0rem 0.0625rem 0.0625rem #0000001a inset;
   }
   .end .which .sizes .size .middle .colors .color.blue {
       background: #01A9F4;
@@ -919,69 +919,69 @@ landing:hover {
   .end .which .sizes .size .bottom {
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 0.875rem;
       justify-content: center;
       align-items: center;
   }
   .end .which .sizes .size .bottom .money {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 0.625rem;
       justify-content: center;
       align-items: center;
   }
   .end .which .sizes .size hr {
       background: #D2D2D8;
       border: none;
-      height: 1px;
+      height: 0.0625rem;
       width: 100%;
   }
   .end .which .links {
       display: flex;
-      gap: 32px;
-      margin-top: 74px;
+      gap: 2rem;
+      margin-top: 4.625rem;
   }
   .end .which .links .link-container span {
-      font-size: 21px;
+      font-size: 1.312rem;
   }
   .end .which .links .link-container span:last-child {
-      font-size: 17px;
+      font-size: 1.062rem;
   }
   .end .last-boxes {
       display: flex;
-      gap: 44px;
+      gap: 2.75rem;
   }
   .end .last-boxes .last-box {
       display: flex;
       justify-content: space-between;
       /* align-items: center; */
       background: #fff;
-      border-radius: 30px;
-      padding: 46px;
+      border-radius: 1.875rem;
+      padding: 2.875rem;
       flex-direction: column;
-      gap: 40px;
+      gap: 2.5rem;
       width: 50%;
-      font-size: 17px;
+      font-size: 1.062rem;
   }
   .end .last-boxes .last-box .top {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 10px;
+      gap: 0.625rem;
   }
   .end .last-boxes .last-box .main {
       display: flex;
       flex-direction: column;
-      gap: 13px;
+      gap: 0.8125rem;
       align-items: center;
   }
   .end .last-boxes .last-box h4, .end .last-boxes .last-box p {
       text-align: center; 
   }
   .end .last-boxes .last-box button {
-      width: 71px;
-      height: 36px;
-      font-size: 17px;
+      width: 4.438rem;
+      height: 2.25rem;
+      font-size: 1.062rem;
   }
   .end .last-boxes .last-box:first-child {
       position: relative;
@@ -995,23 +995,23 @@ landing:hover {
   .end .last-boxes .last-box:last-child img {
       width: 80%;
   }
-  @media only screen and (min-width: 1400px) {
+  @media only screen and (min-width: 87.5rem) {
     .end .container {
-          width: 1300px;
+          width: 81.25rem;
       }
       .end .grid, .end .grid .row, .end .last-boxes {
-          width: 1392px;
+          width: 87rem;
       }
   }
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 62.5rem) {
       body {
           overflow-x: hidden;
       }
       nav {
           justify-content: space-between;
-          padding-left: 22px;
-      padding-right: 22px;
-      width: calc(100% - 44px);
+          padding-left: 1.375rem;
+      padding-right: 1.375rem;
+      width: calc(100% - 2.75rem);
       }
       nav a:not(.apple-logo), nav svg:not(nav > svg:last-child) {
           display: none;
@@ -1041,25 +1041,25 @@ landing:hover {
       }
       section {
           padding: 20% 5%;
-          gap: 61px;
+          gap: 3.812rem;
       }
       .landing img {
           width: 100%;
       }
       h1 {
-          font-size: 80px;
+          font-size: 5rem;
       }
       h2 {
-          font-size: 56px;
+          font-size: 3.5rem;
       }
       h3 {
-          font-size: 20px;
+          font-size: 1.25rem;
       }
       h4 {
-          font-size: 40px;
+          font-size: 2.5rem;
       }
       h6 {
-          font-size: 20px;
+          font-size: 1.25rem;
       }
       section .feature, section .feature.alt {
           flex-direction: column;
@@ -1074,7 +1074,7 @@ landing:hover {
           flex-direction: column;
       }
       .colors .container .left {
-          padding: 22px;
+          padding: 1.375rem;
           width: 90%;
       }
       .colors .container .right {
@@ -1082,7 +1082,7 @@ landing:hover {
       }
       .colors .container .right > * {
           width: 90%;
-          padding: 22px;
+          padding: 1.375rem;
       }
       .colors .container .left img, .colors .container .right > * img {
           width: 30%;
@@ -1101,11 +1101,11 @@ landing:hover {
       }
       .w1 .containers {
           width: 100%;
-          padding: 40px;
+          padding: 2.5rem;
       }
       .w1 .container .stats {
           flex-direction: column;
-          gap: 40px;
+          gap: 2.5rem;
   /*      align-items: center; */
       }
       .w1 .container img {
@@ -1118,8 +1118,8 @@ landing:hover {
           padding: 0;
       }
       .w1 .container-double .inner {
-          width: calc(100% - 92px);
-          height: 330px;
+          width: calc(100% - 5.75rem);
+          height: 20.62rem;
       }
       .apple-cup img {
           width: 70% !important;
@@ -1131,7 +1131,7 @@ landing:hover {
           flex-direction: column;
       }
       .touch-id .container .inner {
-          width: calc(100% - 92px);
+          width: calc(100% - 5.75rem);
       }
       .touch-id .container .inner img.t-c {
           left: 0;
@@ -1141,8 +1141,8 @@ landing:hover {
       }
       .end .container {
           flex-direction: column;
-          gap: 44px;
-          width: calc(100% - 92px);
+          gap: 2.75rem;
+          width: calc(100% - 5.75rem);
           height: auto;
       }
       .end .container .text {
@@ -1152,7 +1152,7 @@ landing:hover {
       }
       .end .container > img {
           position: relative;
-          bottom: -46px;
+          bottom: -2.875rem;
           margin-right: 0;
       }
       .end .container.earth > img {
@@ -1164,7 +1164,7 @@ landing:hover {
           flex-direction: column;
       }
       .end .grid .row .inner {
-          width: calc(100% - 92px);
+          width: calc(100% - 5.75rem);
       }
       .end .which .sizes {
           flex-direction: column;
@@ -1172,8 +1172,8 @@ landing:hover {
       }
       .end .which .links {
           flex-direction: column;
-          gap: 10px;
-          margin-top: 40px;
+          gap: 0.625rem;
+          margin-top: 2.5rem;
           align-items: center;
       }
       .end .last-boxes {
@@ -1181,11 +1181,11 @@ landing:hover {
           flex-direction: column;
       }
       .end .last-boxes .last-box {
-          width: calc(100% - 92px);
+          width: calc(100% - 5.75rem);
       }
       .end .last-boxes .last-box:first-child img {
           position: relative;
-          left: -46px;
+          left: -2.875rem;
       }
       .how img {
           width: 30%;
@@ -1197,7 +1197,7 @@ landing:hover {
           width: 50%;
       }
       .w1 .container, .w1 .container-double {
-  /*      padding: 44px; */
+  /*      padding: 2.75rem; */
       }
       .w1 .top img:last-child {
           width: 100%;
@@ -1218,10 +1218,10 @@ landing:hover {
           width: 70%;
       }
       footer .footer-features .footer-feature {
-          min-width: 400px;
+          min-width: 25rem;
       }
   }x
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 37.5rem) {
       section .feature img {
       width: 100%;
       }
@@ -1238,7 +1238,7 @@ landing:hover {
           display: none;
       }
       .fits-in-life h1, .fits-in-life h3 {
-          padding: 32px;
+          padding: 2rem;
       }
       .w1 .header h2:first-child {
           flex-direction: column;
@@ -1246,7 +1246,7 @@ landing:hover {
       }
       .w1 .container .stats {
           flex-direction: column;
-          gap: 40px;
+          gap: 2.5rem;
       }
       .w1 .container-double {
           flex-direction: column;
@@ -1254,9 +1254,9 @@ landing:hover {
           padding: 0;
       }
       .w1 .container-double .inner {
-          width: calc(100% - 92px);
+          width: calc(100% - 5.75rem);
           padding-bottom: 0;
-          padding-top: 44px;  
+          padding-top: 2.75rem;  
       }
       .touch-id img {
           width: 50%;
@@ -1272,12 +1272,12 @@ landing:hover {
   }
   /*.button {
       display: inline-block;
-      padding: 10px 20px;
+      padding: 0.625rem 1.25rem;
       font-size: 1em;
       background-color: #ea0029; 
       color: white;
       border: none;
-      border-radius: 20px; 
+      border-radius: 1.25rem; 
       cursor: pointer;
       transition: background-color 0.3s ease, transform 0.2s ease; */
   }
@@ -1289,12 +1289,12 @@ landing:hover {
   .footer .footer-features-wrapper {
       display: flex;
       flex-direction: column;
-      gap: 50px;
+      gap: 3.125rem;
       justify-content: center;
   }
   footer .footer-features {
       display: flex;
-      gap: 50px;
+      gap: 3.125rem;
       justify-content: center;
       align-items: flex-start;
       width: 80%;
@@ -1304,7 +1304,7 @@ landing:hover {
   footer .footer-features .footer-feature {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 0.625rem;
       justify-content: center;
       align-items: center;
       width: 33%;
@@ -1313,56 +1313,56 @@ landing:hover {
   footer .footer-features .middle {
       display: flex;
       flex-direction: column;
-      gap: 5px;
+      gap: 0.3125rem;
       align-items: center;
   }
   footer .footer-features h5 {
-      font-size: 19px;
+      font-size: 1.188rem;
   }
   footer .footer-features p {
-      font-size: 14px;
+      font-size: 0.875rem;
   }
   footer .footer-features-wrapper {
       display: flex;
       align-items: center;
       flex-direction: column;
-      gap: 50px;
+      gap: 3.125rem;
       justify-content: center;
   }
   footer .footer-features + hr {
-      height: 1px;
+      height: 0.0625rem;
       width: 100%;
       background: #D2D2D8;
-  /*  margin-top: 50px; */
+  /*  margin-top: 3.125rem; */
       border: none;
   }
   footer .boring {
       display: flex;
       flex-direction: column;
       width: 100%;
-      gap: 34px;
+      gap: 2.125rem;
   }
   footer .boring .top {
       display: flex;
       flex-direction: column;
-      gap: 17px;
+      gap: 1.062rem;
   }
   footer .boring .path {
       display: flex;
-      gap: 11px;
+      gap: 0.6875rem;
   }
   footer .boring .path .apple-logo {
-      width: 14px;
-      height: 18px;
+      width: 0.875rem;
+      height: 1.125rem;
   }
   footer .boring .path .chevron {
-      width: 9px;
-      height: 20px;
+      width: 0.5625rem;
+      height: 1.25rem;
   }
   footer .boring .path p {
       color: #424245;
       font-weight: 600;
-      font-size: 12px;
+      font-size: 0.75rem;
   }
   footer .boring .links {
       display: flex;
@@ -1373,15 +1373,15 @@ landing:hover {
   footer .boring .links .column {
       display: flex; 
       flex-direction: column;
-      gap: 18px;
+      gap: 1.125rem;
   }
   footer .boring .links .column .inner {
       display: flex; 
       flex-direction: column;
-      gap: 9px;
+      gap: 0.5625rem;
   }
   footer .boring .links .column .inner p:not(.header) {
-      font-size: 12px;
+      font-size: 0.75rem;
       color: #424245;
       cursor: pointer;
       width: fit-content;
@@ -1390,19 +1390,19 @@ landing:hover {
       text-decoration: underline;
   }
   footer .boring .links .column .inner .header {
-      font-size: 12px;
+      font-size: 0.75rem;
       color: #000;
       font-weight: 600;
   }
   footer .boring .bottom {
       display: flex;
-      gap: 7px;
+      gap: 0.4375rem;
       flex-direction: column;
       width: 100%;
   }
   footer .boring .bottom p {
       color: #6E6E73;
-      font-size: 12px;
+      font-size: 0.75rem;
   }
   footer .boring .bottom p .link-colored {
       color: #0071E3;
@@ -1411,7 +1411,7 @@ landing:hover {
       text-decoration: none;
   }
   footer .boring .bottom hr {
-      height: 1px;
+      height: 0.0625rem;
       width: 100%;
       background: #D2D2D8;
       border: none;
@@ -1422,35 +1422,35 @@ landing:hover {
   }
   footer .boring .bottom .legal .left {
       display: flex;
-      gap: 50px;
+      gap: 3.125rem;
   }
   footer .boring .bottom .legal .left .legal-links {
       display: flex;
-      gap: 10px;
+      gap: 0.625rem;
   }
   footer .boring .bottom .legal .left .legal-links p {
       color: #424245;
   }
   footer .boring .bottom .legal .left .legal-links .seperator {
-      width: 1px;
+      width: 0.0625rem;
       height: 100%;
       background: #D2D2D8;
   }
   .local-nav-wrapper {
-      padding-top: 1px; /* Adds space above the entire nav wrapper */
+      padding-top: 0.0625rem; /* Adds space above the entire nav wrapper */
   }
   .local-nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
       width: 100%;
-      max-width: 1200px;
+      max-width: 75rem;
   }
   .local-nav .logo {
-    height: 80px; /* Adjust as needed, e.g., 60px or 80px */
+    height: 5rem; /* Adjust as needed, e.g., 3.75rem or 5rem */
     width: auto;
-    padding-top: 5px; /* Adds space above the logo */
-    padding-bottom: 5px; /* Adds space below the logo */
+    padding-top: 0.313rem; /* Adds space above the logo */
+    padding-bottom: 0.313rem; /* Adds space below the logo */
     margin-top: 0; /* Adjust or add if necessary */
 }
 
@@ -1461,13 +1461,13 @@ landing:hover {
   .iframe-container iframe {
       width: 100%;
       height: 100%;
-      max-width: 960px; /* Optional: sets a max width */
+      max-width: 60rem; /* Optional: sets a max width */
       border: none;
   }
   #slideshow {
     width: 100%;
     height: auto;
-    max-height: 500px; /* Adjust as needed */
+    max-height: 31.25rem; /* Adjust as needed */
     object-fit: cover;
 }
 
@@ -1475,7 +1475,7 @@ landing:hover {
 .footer {
     background-color: #333;
     color: white;
-    padding: 40px 20px;
+    padding: 2.5rem 1.25rem;
     font-size: 0.9rem;
 }
 
@@ -1483,17 +1483,17 @@ landing:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .footer-section {
     flex: 1;
-    min-width: 200px;
+    min-width: 12rem;
 }
 
 .footer-section h3 {
     font-size: 1.2rem;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
 .footer-section p, .footer-section a {
@@ -1511,26 +1511,26 @@ landing:hover {
 }
 
 .footer-section ul li {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .footer-bottom {
     background-color: #222;
-    padding: 10px;
+    padding: 0.625rem;
     text-align: center;
     font-size: 0.8rem;
     color: #bbb;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .social-icons a {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 
 .social-icons img {
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 
@@ -1538,8 +1538,8 @@ landing:hover {
 .options-section {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    padding: 40px 20px;
+    gap: 1.25rem;
+    padding: 2.5rem 1.25rem;
     position: relative;
     height: 100vh;
     align-items: center;
@@ -1552,15 +1552,15 @@ landing:hover {
     display: flex;
     justify-content: center; /* Aligns buttons horizontally */
     flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
-    gap: 20px; /* Adds spacing between buttons */
-    padding: 20px;
+    gap: 1.25rem; /* Adds spacing between buttons */
+    padding: 1.25rem;
 }
 
 /* Button Styling */
 .option-button {
-    padding: 15px 25px;
+    padding: 0.9375rem 1.562rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     font-size: 1.2rem;
     color: #fff;
     text-align: center;
@@ -1569,7 +1569,7 @@ landing:hover {
     transition: transform 0.3s ease, color 0.3s ease;
     position: relative;
     z-index: 1; /* Ensures buttons are above background effect */
-    min-width: 150px; /* Ensures consistent button width */
+    min-width: 9.375rem; /* Ensures consistent button width */
 }
 
 .option-button:hover {
@@ -1625,7 +1625,7 @@ landing:hover {
   
   .splash-text h1 {
     font-size: 2.5rem; /* Main heading size */
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     font-family: Arial, sans-serif; /* Change to match your theme */
   }
   
@@ -1654,13 +1654,13 @@ landing:hover {
 
 button {
     position: relative;
-    padding: 1% 3.5%;
+    padding: 1% 5%;
     background: #ea0029;
-    font-size: 17px;
+    font-size: 1.062rem;
     font-weight: 500;
     color: #ffffff;
-    border: 3px solid #ea0029;
-    border-radius: 8px;
+    border: 0.1875rem solid #ea0029;
+    border-radius: 0.5rem;
     box-shadow: 0 0 0 #fec1958c;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
@@ -1678,50 +1678,50 @@ button {
 button:hover {
     background: transparent;
     color: #5a5950;
-    box-shadow: 0 0 25px #fec1958c;
+    box-shadow: 0 0 1.562rem #fec1958c;
     transform: scale(1.1);
 }
 
 button:hover .star-1 {
     top: -80%;
     left: -30%;
-    width: 25px;
-    filter: drop-shadow(0 0 10px #fffdef);
+    width: 1.562rem;
+    filter: drop-shadow(0 0 0.625rem #fffdef);
 }
 
 button:hover .star-2 {
     top: -25%;
     left: 10%;
-    width: 15px;
-    filter: drop-shadow(0 0 10px #fffdef);
+    width: 0.9375rem;
+    filter: drop-shadow(0 0 0.625rem #fffdef);
 }
 
 button:hover .star-3 {
     top: 55%;
     left: 25%;
-    width: 5px;
-    filter: drop-shadow(0 0 10px #fffdef);
+    width: 0.3125rem;
+    filter: drop-shadow(0 0 0.625rem #fffdef);
 }
 
 button:hover .star-4 {
     top: 30%;
     left: 80%;
-    width: 8px;
-    filter: drop-shadow(0 0 10px #fffdef);
+    width: 0.5rem;
+    filter: drop-shadow(0 0 0.625rem #fffdef);
 }
 
 button:hover .star-5 {
     top: 25%;
     left: 115%;
-    width: 15px;
-    filter: drop-shadow(0 0 10px #fffdef);
+    width: 0.9375rem;
+    filter: drop-shadow(0 0 0.625rem #fffdef);
 }
 
 button:hover .star-6 {
     top: 5%;
     left: 60%;
-    width: 5px;
-    filter: drop-shadow(0 0 10px #fffdef);
+    width: 0.3125rem;
+    filter: drop-shadow(0 0 0.625rem #fffdef);
 }
 
 .fil0 {
@@ -1752,7 +1752,50 @@ body {
         background-position: 0 0;
     }
     to {
-        background-position: 0 10000px;
+        background-position: 0 625rem;
     }
 }
 
+
+/* Make header elements responsive */
+.header .local-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ensures items wrap on small screens */
+}
+
+.header .local-nav .logo {
+    max-width: 6.25rem; /* Set max width for responsiveness */
+    height: auto; /* Keep aspect ratio */
+}
+
+/* Adjust navigation links and buttons */
+.header .local-nav .right {
+    display: flex;
+    gap: 0.625rem;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.header .local-nav .right a,
+.header .local-nav .right button {
+    font-size: 0.9rem; /* Adjust font size for small screens */
+    padding: 0.313rem 0.625rem; /* Adjust padding */
+}
+
+/* Add media query for smaller screens */
+@media only screen and (max-width: 48rem) {
+    .header .local-nav {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+    }
+
+    .header .local-nav .right {
+        flex-direction: column; /* Stack links and buttons */
+        gap: 0.313rem; /* Reduce spacing */
+    }
+
+    .header .local-nav .logo {
+        max-width: 5rem; /* Smaller logo for small screens */
+    }
+}
