@@ -1,334 +1,192 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>FHS: Exceptional Coffee Shop</title>
     <link rel="shortcut icon" href="Files/fhscoffeelogo" type="image/png">
-        <link rel="stylesheet" href="https://lzlobecki.github.io/SchoolLogistics/style.css">
-        <link rel="stylesheet" href="https://lzlobecki.github.io/SchoolLogistics/styles.css">
-        <style>
-            /* Container for the entire grid */
-            .team-container {
-              max-width: 900px;
-              margin: 0 auto;
-              text-align: center;
-            }
-        
-            /* Title and introduction */
-            .team-title {
-              font-size: 28px;
-              font-weight: bold;
-              margin-top: 20px;
-            }
-        
-            .team-description {
-              font-size: 16px;
-              color: #555;
-              margin-bottom: 30px;
-            }
-        
-            /* Grid layout */
-            .grid-container {
-              display: grid;
-              grid-template-columns: repeat(3, 1fr);
-              gap: 20px;
-            }
-        
-            /* Individual profile styling */
-            .profile-card {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              padding: 10px;
-              border: 1px solid #ddd;
-              border-radius: 8px;
-              background-color: #f9f9f9;
-            }
-        
-            /* Profile image styling */
-            .profile-card img {
-              width: 100px;
-              height: 100px;
-              border-radius: 50%;
-              object-fit: cover;
-            }
-        
-            /* Name styling */
-            .profile-name {
-              font-weight: bold;
-              margin-top: 10px;
-              font-size: 18px;
-            }
-        
-            /* Class year styling */
-            .profile-class {
-              font-size: 14px;
-              color: #333;
-            }
-        
-            /* Description styling */
-            .profile-description {
-              font-size: 12px;
-              color: #888;
-              font-style: italic;
-              margin-top: 5px;
-            }
-          </style>
-	
+    <link rel="stylesheet" href="https://lzlobecki.github.io/SchoolLogistics/style.css">
+    <link rel="stylesheet" href="https://lzlobecki.github.io/SchoolLogistics/styles.css">
+    <style>
+        .team-container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
 
-  </head>
+        .team-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
 
-  <body>
+        .team-description {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .profile-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .profile-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .profile-name {
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .profile-class {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .profile-description {
+            font-size: 12px;
+            color: #888;
+            font-style: italic;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
     <header>
-      <nav class="header"> <!--HEADER-->
-          <div class="local-nav-wrapper">
-              <div class="local-nav">
-                  <a href="https://lzlobecki.github.io/SchoolLogistics/">
-                      <img src="https://lzlobecki.github.io/SchoolLogistics/Files/fhscoffeelogo.png" alt="Crew Brew Logo" class="logo">
-                  </a>
-  
-                  <div class="right">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                          <path d="M14 18.4883C14.3076 18.4795 14.5889 18.3652 14.8174 18.1191L21.4971 11.2812C21.6904 11.0879 21.7959 10.8418 21.7959 10.5518C21.7959 9.97168 21.3389 9.50586 20.7588 9.50586C20.4775 9.50586 20.2051 9.62012 20.0029 9.82227L14.0088 15.9834L7.99707 9.82227C7.79492 9.62891 7.53125 9.50586 7.24121 9.50586C6.66113 9.50586 6.2041 9.97168 6.2041 10.5518C6.2041 10.8418 6.30957 11.0879 6.50293 11.2812L13.1914 18.1191C13.4287 18.3652 13.6924 18.4883 14 18.4883Z" fill="#1C1C1E"/>
-                      </svg>
-  
-                      <a href="https://lzlobecki.github.io/SchoolLogistics/instructions">How to Use</a>
-                      <a href="https://lzlobecki.github.io/SchoolLogistics/about">About Us</a>
-  
-                      <button class="button" onclick="redirectToShop()">Shop Now!</button>
-                      <script>
-                          // Function to redirect the user to login
-                          function redirectToShop() {
-                              window.location.href = "/login"; // Redirect to shop
-                          }
-                      </script>
-                  </div>
-              </div>
-          </div>
-      </nav>
-  
-  </header>
+        <nav class="header">
+            <div class="local-nav-wrapper">
+                <div class="local-nav">
+                    <a href="https://lzlobecki.github.io/SchoolLogistics/">
+                        <img src="https://lzlobecki.github.io/SchoolLogistics/Files/fhscoffeelogo.png" alt="Crew Brew Logo" class="logo">
+                    </a>
+                    <div class="right">
+                        <a href="https://lzlobecki.github.io/SchoolLogistics/instructions">How to Use</a>
+                        <a href="https://lzlobecki.github.io/SchoolLogistics/about">About Us</a>
+                        <button class="button" onclick="redirectToShop()">Shop Now!</button>
+                        <script>
+                            function redirectToShop() {
+                                window.location.href = "/login";
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
     <div class="team-container">
-        <h4>‎ </h4>
-        <h1 class="team-title">Meet Our Team</h1>
-        <h6>‎ </h6>
-        <h4 class="team-description">
-          These are our amazing Exceptional Learners who will be delivering your beverage! 
-          Feel free to get to know them and their unique interests.
-        </h4>
-        
-        <!-- Grid layout with profiles -->
-        <div class="grid-container">
-          <!-- Profile 1 -->
-          <div class="profile-card">
-            <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Abbie.jpeg" alt="Student 1">
-            <div class="profile-name">Abbie  </div>
-            <div class="profile-class">Class of 2024</div>
-            <div class="profile-description">I love to babysit and cheer</div>
-          </div>
-    
-          <!-- Profile 2 -->
-          <div class="profile-card">
-            <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/AJ.jpeg" alt="AJ">
-            <div class="profile-name">AJ</div>
-            <div class="profile-class">Class of 2027</div>
-            <div class="profile-description">I workout with the swim team</div>
-          </div>
-    
-          <!-- Profile 3 -->
-          <div class="profile-card">
-            <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Alex.jpeg" alt="Alex">
-            <div class="profile-name">Alex</div>
-            <div class="profile-class">Class of 2024</div>
-            <div class="profile-description">I swim for FHS</div>
-          </div>
-
-          <h6>‎ </h6>
-
-          <!-- Add more profiles as needed to complete the 3x5 grid -->
-          <!-- Repeat the above profile-card div structure for each student -->
-    
-        </div>
-       
-        <div class="grid-container">
-            <!-- Profile 1 -->
-            <div class="profile-card">
-              <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Ava.Sharp.jpeg" alt="Ava Sharp">
-              <div class="profile-name">Ava Sharp</div>
-              <div class="profile-class">Class of 2027</div>
-              <div class="profile-description">I love dogs</div>
-            </div>
-      
-            <!-- Profile 2 -->
-            <div class="profile-card">
-              <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Ava.Smith.jpeg" alt="Ava Smith">
-              <div class="profile-name">Ava Smith</div>
-              <div class="profile-class">Class of 2027</div>
-              <div class="profile-description">I play soccer and tennis</div>
-            </div>
-      
-            <!-- Profile 3 -->
-            <div class="profile-card">
-              <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Caroline.jpeg" alt="Caroline">
-              <div class="profile-name">Caroline</div>
-              <div class="profile-class">Class of 2025</div>
-              <div class="profile-description">I am learning French</div>
-            </div>
-  
-            <h6>‎ </h6>
-  
-            <!-- Add more profiles as needed to complete the 3x5 grid -->
-            <!-- Repeat the above profile-card div structure for each student -->
-      
-          </div>
-        
-          <div class="grid-container">
-            <!-- Profile 1 -->
-            <div class="profile-card">
-              <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Carter.jpeg" alt="Carter">
-              <div class="profile-name">Carter</div>
-              <div class="profile-class">Class of 2024</div>
-              <div class="profile-description">I work in the Pacers Pro Shop</div>
-            </div>
-      
-            <!-- Profile 2 -->
-            <div class="profile-card">
-              <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Tumi.jpeg" alt="Tumi">
-              <div class="profile-name">Tumi</div>
-              <div class="profile-class">Class of 2025</div>
-              <div class="profile-description">I love to sing and dance</div>
-            </div>
-      
-            <!-- Profile 3 -->
-            <div class="profile-card">
-              <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Christian.jpeg" alt="Christian">
-              <div class="profile-name">Christian</div>
-              <div class="profile-class">Class of 2024</div>
-              <div class="profile-description">I love video games</div>
-            </div>
-  
-            <h6>‎ </h6>
-  
-            <!-- Add more profiles as needed to complete the 3x5 grid -->
-            <!-- Repeat the above profile-card div structure for each student -->
-      
-          </div>
-          <div class="grid-container">
-            <!-- Profile 1 -->
-            <div class="profile-card">
-              <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Jonah.jpeg" alt="Jonah">
-              <div class="profile-name">Jonah</div>
-              <div class="profile-class">Class of 2025</div>
-              <div class="profile-description">I love the Colts and Pacers</div>
-            </div>
-      
-            <!-- Profile 2 -->
-            <div class="profile-card">
-              <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Justin.jpeg" alt="Justin">
-              <div class="profile-name">Justin</div>
-              <div class="profile-class">Class of 2026</div>
-              <div class="profile-description">I am on the Unified Dance team</div>
-            </div>
-      
-            <!-- Profile 3 -->
-            <div class="profile-card">
-              <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Lauren.jpeg" alt="Lauren">
-              <div class="profile-name">Lauren</div>
-              <div class="profile-class">Class of 2024</div>
-              <div class="profile-description">I love Taylor Swift</div>
-            </div>
-  
-            <h6>‎ </h6>
-  
-            <!-- Add more profiles as needed to complete the 3x5 grid -->
-            <!-- Repeat the above profile-card div structure for each student -->
-      
-          </div>
-          <div class="grid-container">
-            <!-- Profile 1 -->
-            <div class="profile-card">
-              <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Malik.jpeg" alt="Malik">
-              <div class="profile-name">Malik</div>
-              <div class="profile-class">Class of 2026</div>
-              <div class="profile-description">I want to be a carousel operator</div>
-            </div>
-      
-            <!-- Profile 2 -->
-            <div class="profile-card">
-              <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Mekhi.jpeg" alt="Mekhi">
-              <div class="profile-name">Mekhi</div>
-              <div class="profile-class">Class of 2024</div>
-              <div class="profile-description">I have a big shoe collection</div>
-            </div>
-            <!-- Profile 3 -->
-            <div class="profile-card">
-              <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Robert.jpeg" alt="Robert">
-              <div class="profile-name">Robert</div>
-              <div class="profile-class">Class of 2024</div>
-              <div class="profile-description">I am always helpful</div>
-            </div>
-  
-            <h6>‎ </h6>
-  
-            <!-- Add more profiles as needed to complete the 3x5 grid -->
-            <!-- Repeat the above profile-card div structure for each student -->
-      
-          </div>
-          <div class="grid-container">
-            <!-- Profile 1 -->
-            <div class="profile-card">
-              <img href="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Rylan.jpeg" alt="Rylan">
-              <div class="profile-name">Rylan</div>
-              <div class="profile-class">Class of 2027</div>
-              <div class="profile-description">I love to play Uno</div>
-            </div>
-            
-            <div class="profile-card">
-              <img href="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Sam.jpeg" alt="Sam">
-              <div class="profile-name">Sam</div>
-              <div class="profile-class">Class of 2024</div>
-              <div class="profile-description">I love the Chippetts</div>
-            </div>
-            
-            <div class="profile-card">
-              <img href="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Sid.jpeg" alt="Sid">
-              <div class="profile-name">Sid</div>
-              <div class="profile-class">Class of 2026</div>
-              <div class="profile-description">I love math and numbers</div>
-            </div>
-            
-  
-            <h6>‎ </h6>
-  
-            <!-- Add more profiles as needed to complete the 3x5 grid -->
-            <!-- Repeat the above profile-card div structure for each student -->
-      
-          </div>
-          <div class="grid-container">
-            <div class="profile-card">
-              <img href="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Teagan.jpeg" alt="Teagan">
-              <div class="profile-name">Teagan</div>
-              <div class="profile-class">Class of 2026</div>
-              <div class="profile-description">I love listening to "Let It Go"</div>
-            </div>
-            
-           
-      
-            <h6>‎ </h6>
-  
-          
-      
-          </div>
+      <h1>‎ </h1>
       <h4>‎ </h4>
       <h6>‎ </h6>
+        <h1 class="team-title">Meet Our Team</h1>
+        <h4 class="team-description">
+            These are our amazing Exceptional Learners who will be delivering your beverage!
+            Feel free to get to know them and their unique interests.
+        </h4>
 
-      
-  </body>
-
-  
-
+        <div class="grid-container">
+            <div class="profile-card">
+                <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Abbie.jpeg" alt="Abbie">
+                <div class="profile-name">Abbie</div>
+                <div class="profile-class">Senior</div>
+                <div class="profile-description">I love to babysit and cheer</div>
+            </div>
+            <div class="profile-card">
+                <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/AJ.jpeg" alt="AJ">
+                <div class="profile-name">AJ</div>
+                <div class="profile-class">Freshman</div>
+                <div class="profile-description">I workout with the swim team</div>
+            </div>
+            <div class="profile-card">
+                <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Alex.jpeg" alt="Alex">
+                <div class="profile-name">Alex</div>
+                <div class="profile-class">Senior</div>
+                <div class="profile-description">I swim for FHS</div>
+            </div>
+            <div class="profile-card">
+                <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Ava.Sharp.jpeg" alt="Ava Sharp">
+                <div class="profile-name">Ava Sharp</div>
+                <div class="profile-class">Freshman</div>
+                <div class="profile-description">I love dogs</div>
+            </div>
+            <div class="profile-card">
+                <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Ava.Smith.jpeg" alt="Ava Smith">
+                <div class="profile-name">Ava Smith</div>
+                <div class="profile-class">Freshman</div>
+                <div class="profile-description">I play soccer and tennis</div>
+            </div>
+            <div class="profile-card">
+                <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Caroline.jpeg" alt="Caroline">
+                <div class="profile-name">Caroline</div>
+                <div class="profile-class">Senior</div>
+                <div class="profile-description">I am learning French</div>
+            </div>
+            <div class="profile-card">
+                <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Carter.jpeg" alt="Carter">
+                <div class="profile-name">Carter</div>
+                <div class="profile-class">Senior</div>
+                <div class="profile-description">I work in the Pacers Pro Shop</div>
+            </div>
+            <div class="profile-card">
+                <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Christian.jpeg" alt="Christian">
+                <div class="profile-name">Christian</div>
+                <div class="profile-class">Senior</div>
+                <div class="profile-description">I love video games</div>
+            </div>
+            <div class="profile-card">
+                <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Justin.jpeg" alt="Justin">
+                <div class="profile-name">Justin</div>
+                <div class="profile-class">Junior</div>
+                <div class="profile-description">I am on the Unified Dance team</div>
+            </div>
+            <div class="profile-card">
+                <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Malik.jpeg" alt="Malik">
+                <div class="profile-name">Malik</div>
+                <div class="profile-class">Junior</div>
+                <div class="profile-description">I want to be a carousel operator</div>
+            </div>
+            <div class="profile-card">
+                <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Mekhi.jpeg" alt="Mekhi">
+                <div class="profile-name">Mekhi</div>
+                <div class="profile-class">Senior</div>
+                <div class="profile-description">I have a big shoe collection</div>
+            </div>
+            <div class="profile-card">
+                <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Rylan.jpeg" alt="Rylan">
+                <div class="profile-name">Rylan</div>
+                <div class="profile-class">Freshman</div>
+                <div class="profile-description">I love to play Uno</div>
+            </div>
+            <div class="profile-card">
+                <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Sam.jpeg" alt="Sam">
+                <div class="profile-name">Sam</div>
+                <div class="profile-class">Senior</div>
+                <div class="profile-description">I love the Chippetts</div>
+            </div>
+            <div class="profile-card">
+                <img src="https://lzlobecki.github.io/SchoolLogistics/Files/AboutUsPics/Sid.jpeg" alt="Sid">
+                <div class="profile-name">Sid</div>
+                <div class="profile-class">Junior</div>
+                <div class="profile-description">I love math and numbers</div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
-
-
-    
