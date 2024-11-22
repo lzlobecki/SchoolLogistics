@@ -3,40 +3,37 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>School Logistics - CS3</title>
-<link rel="shortcut icon" href="https://lzlobecki.github.io/SchoolLogistics/Files/logo.png" type="https://lzlobecki.github.io/SchoolLogistics/image/png">
-<link rel="stylesheet" href="https://lzlobecki.github.io/SchoolLogistics/style.css">
-<link rel="stylesheet" href="https://lzlobecki.github.io/SchoolLogistics/shopstyles.css">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../shopstyles.css">
 
 <nav> <!--HEADER-->
-    <header>
-        <nav class="header"> <!--HEADER-->
-            <div class="local-nav-wrapper">
-                <div class="local-nav">
-                    <a href="https://lzlobecki.github.io/SchoolLogistics/">
-                        <img src="Files/fhscoffeelogo.png" alt="Crew Brew Logo" class="logo">
-                    </a>
-    
-                    <div class="right">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                            <path d="M14 18.4883C14.3076 18.4795 14.5889 18.3652 14.8174 18.1191L21.4971 11.2812C21.6904 11.0879 21.7959 10.8418 21.7959 10.5518C21.7959 9.97168 21.3389 9.50586 20.7588 9.50586C20.4775 9.50586 20.2051 9.62012 20.0029 9.82227L14.0088 15.9834L7.99707 9.82227C7.79492 9.62891 7.53125 9.50586 7.24121 9.50586C6.66113 9.50586 6.2041 9.97168 6.2041 10.5518C6.2041 10.8418 6.30957 11.0879 6.50293 11.2812L13.1914 18.1191C13.4287 18.3652 13.6924 18.4883 14 18.4883Z" fill="#1C1C1E"/>
-                        </svg>
-    
-                        <a href="https://lzlobecki.github.io/SchoolLogistics/instructions">How to Use</a>
-                        <a href="https://lzlobecki.github.io/SchoolLogistics/about">About Us</a>
-    
-                        <button class="button" onclick="redirectToShop()">Shop Now!</button>
-                        <script>
-                            // Function to redirect the user to login
-                            function redirectToShop() {
-                                window.location.href = "/login"; // Redirect to shop
-                            }
-                        </script>
-                    </div>
-                </div>
+    <div class="local-nav-wrapper">
+        <div class="local-nav">
+            <a href="/index.html">
+                <h6> ‎  </h6>
+                <img src="/Files/logo.png" alt="Crew Brew Logo" class="logo">
+            </a>
+
+            <div class="right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <path d="M14 18.4883C14.3076 18.4795 14.5889 18.3652 14.8174 18.1191L21.4971 11.2812C21.6904 11.0879 21.7959 10.8418 21.7959 10.5518C21.7959 9.97168 21.3389 9.50586 20.7588 9.50586C20.4775 9.50586 20.2051 9.62012 20.0029 9.82227L14.0088 15.9834L7.99707 9.82227C7.79492 9.62891 7.53125 9.50586 7.24121 9.50586C6.66113 9.50586 6.2041 9.97168 6.2041 10.5518C6.2041 10.8418 6.30957 11.0879 6.50293 11.2812L13.1914 18.1191C13.4287 18.3652 13.6924 18.4883 14 18.4883Z" fill="#1C1C1E"/>
+                </svg>
+
+                <a href="/orderstatus.html">Order Status</a>
+                <a href="/instructions.html">How to Use</a>
+                <a href="/about.html">About Us</a>
+
+                <button class="button" onclick="redirectToOrder()">Login</button>
+                <script>
+                    // Function to redirect the user to the login page
+                    function redirectToOrder() {
+                        window.location.href = "/loginpage.html";
+                    }
+                </script>
             </div>
-        </nav>
-    
-    </header>
+        </div>
+    </div>
+</nav>
 
 </head>
 
@@ -47,14 +44,14 @@
         <div class="row">
             <!-- Coffee Row -->
             <div class="product-card">
-                <img src="/Files/coffee icon.png" alt="Coffee (Large)" class="product-image" />
+                <img src="/Files/coffee icon.jpeg" alt="Coffee (Large)" class="product-image" />
                 <h3 class="product-title">Coffee (Large)</h3>
                 <div class="price"><span class="current-price">$2.00</span></div>
-                <button class="add-to-cart" onclick="openPopup('https://square.link/u/K1SKPYdZ')">Order</button>
+                <button class="add-to-cart" onclick="openPopup('https://square.link/u/WfV5W5Xh')">Order</button>
             </div>
 
             <div class="product-card">
-                <img src="/Files/coffee icon.png" alt="Coffee (Small)" class="product-image" />
+                <img src="/Files/coffee icon.jpeg" alt="Coffee (Small)" class="product-image" />
                 <h3 class="product-title">Coffee (Small)</h3>
                 <div class="price"><span class="current-price">$1.00</span></div>
                 <button class="add-to-cart" onclick="openPopup('https://square.link/u/4rpp7wmv')">Order</button>
@@ -62,17 +59,12 @@
 
             
             <div class="product-card">
-                <img src="/Files/hot choloclate icon.png" alt="Hot Chocolate (12oz)" class="product-image" />
+                <img src="/Files/hot choloclate icon.jpeg" alt="Hot Chocolate (12oz)" class="product-image" />
                 <h3 class="product-title">Hot Chocolate (12 oz)</h3>
                 <div class="price"><span class="current-price">$2.00</span><span class="original-price">$26.99</span></div>
-                <button class="add-to-cart" onclick="openPopup('https://square.link/u/gfvirrcl')">Order</button>
+                <button class="add-to-cart" onclick="openPopup('PLACEHOLDER_LINK')">Order</button>
             </div>
-            <div class="product-card">
-                <img src="/Files/tea cup.png" alt="Tea"  class="product-image" />
-                <h3 class="product-title">Tea (12 oz)</h3>
-                <div class="price"><span class="current-price">$2.00</span><span class="original-price">$26.99</span></div>
-                <button class="add-to-cart" onclick="openPopup('https://square.link/u/gfvirrcl')">Order</button>
-            </div>
+
 
           
         </div>
@@ -80,40 +72,29 @@
         <div class="row">
             <!-- Non-Coffee Row -->
             <div class="product-card">
-                <img src="/Files/coffee icon.png" alt="Coffee (Large Decaf)" class="product-image" />
+                <img src="/Files/coffee icon.jpeg" alt="Coffee (Large Decaf)" class="product-image" />
                 <h3 class="product-title">Coffee (Large Decaf)</h3>
                 <div class="price"><span class="current-price">$2.00</span></div>
-                <button class="add-to-cart" onclick="openPopup('https://square.link/u/ONy8Txai')">Order</button>
+                <button class="add-to-cart" onclick="openPopup('https://square.link/u/vFjS7rhS')">Order</button>
             </div>
             <div class="product-card">
-                <img src="/Files/coffee icon.png" alt="Coffee (Small Decaf)" class="product-image" />
+                <img src="/Files/coffee icon.jpeg" alt="Coffee (Small Decaf)" class="product-image" />
                 <h3 class="product-title">Coffee (Small Decaf)</h3>
                 <div class="price"><span class="current-price">$1.00</span></div>
-                <button class="add-to-cart" onclick="openPopup('https://square.link/u/k4VQimpe')">Order</button>
+                <button class="add-to-cart" onclick="openPopup('https://square.link/u/UrYjf4Dx')">Order</button>
             </div>
           
             <div class="product-card">
-                <img src="/Files/water cup.png" alt="Water" class="product-image" />
+                <img src="/Files/water cup.jpeg" alt="Water" class="product-image" />
                 <h3 class="product-title">Water</h3>
-                <div class="price"><span class="current-price">$1.00</span><span class="original-price">$18.95</span></div>
-                <button class="add-to-cart" onclick="openPopup('PLACEHOLDER_LINK')">Order</button>
-            </div>
-            <div class="product-card">
-                <img src="/Files/SODA ICON.png" alt="Soda" class="product-image" />
-                <h3 class="product-title">Soda</h3>
-                <div class="price"><span class="current-price">$1.00</span><span class="original-price">$18.95</span></div>
-                <button class="add-to-cart" onclick="openPopup('PLACEHOLDER_LINK')">Order</button>
-            </div>
-
-            <div class="product-card">
-                <img src="/Files/coffee icon.png" alt="Soda" class="product-image" />
-                <h3 class="product-title">Test Coffee</h3>
                 <div class="price"><span class="current-price">$1.00</span><span class="original-price">$18.95</span></div>
                 <button class="add-to-cart" onclick="openPopup('PLACEHOLDER_LINK')">Order</button>
             </div>
             
         </div>
     </div>
+
+
 
     <script>
         // Function to open the product link in a small popup window
