@@ -47,7 +47,6 @@ if (isSignInWithEmailLink(Auth, window.location.href)) {
     if (email && (email.endsWith('@hsestudents.org') || email.endsWith('@hse.k12.in.us'))) {
         signInWithEmailLink(Auth, email, window.location.href)
             .then((result) => {
-                window.localStorage.removeItem('ClientEmail');
                 MessageDiv.innerHTML = `Successfully signed in as ${result.user.email}, redirecting to shop`;
                 setTimeout(() => {
                     window.location.href = "../shop";
