@@ -16,21 +16,18 @@ Index
     <title>School Logistics - CS3</title>
     <link rel="shortcut icon" href="Files/logo.png" type="image/png">
         <link rel="stylesheet" href="style.css">
-	
         <script>
-            function redirectToDeviceSpecificPage() {
+            function redirectToMobile() {
                 // Check if the screen width is 768px or below OR if the user agent indicates a mobile device
                 if (window.innerWidth <= 768 || /mobile|android|iphone|ipad|tablet/i.test(navigator.userAgent)) {
-                    window.location.href = "mobile.html";  // Redirect to mobile homepage
-                } else {
-                    window.location.href = "index.html"; // Redirect to desktop homepage
+                    window.location.href = "mobile.html";  // Redirect mobile users to mobile.html
                 }
             }
           
             // Run the redirection when the page loads
-            window.onload = redirectToDeviceSpecificPage;
+            window.onload = redirectToMobile;
           </script>
-          
+            
   </head>
 
   <body>
