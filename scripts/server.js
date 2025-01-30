@@ -1,10 +1,11 @@
+require('dotenv').config({ path: '../.env' });
 const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -19,7 +20,7 @@ app.post('/api/customer-info', async (req, res) => {
     const response = await axios.get('https://connect.squareup.com/v2/customers?count=true&sort_order=DESC&sort_field=CREATED_AT', {
       headers: {
         'Square-Version': '2024-11-20',
-        'Authorization': 'Bearer EAAAls_rU9T80oS74IQZGcq_DHqGWefHeyqA56SQiBNzip03qhBXSGjR2AlQQD-9',
+        'Authorization': `Bearer ${process.env.SQUARE_API_KEY}`,
         'Content-Type': 'application/json',
         'origin': 'http://localhost:3000'
       }
