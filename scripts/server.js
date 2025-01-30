@@ -29,7 +29,7 @@ app.post('/api/customer-info', async (req, res) => {
     if (data.customers && Array.isArray(data.customers)) {
       const customer = data.customers.find(customer => customer.email_address === email);
       if (customer) {
-        return res.json(customer);
+        return res.json(customer.reference_id);
       } else {
         return res.status(404).json({ error: 'Customer not found' });
       }
