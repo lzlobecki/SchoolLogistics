@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js";
-import { getAuth, sendSignInLinkToEmail, isSignInWithEmailLink, signInWithEmailLink, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-auth.js";
+import { getAuth, sendSignInLinkToEmail, isSignInWithEmailLink, signInWithEmailLink } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-auth.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-analytics.js";
 
 const FirebaseConfig = {
@@ -13,7 +13,7 @@ const FirebaseConfig = {
   };
 
 const App = initializeApp(FirebaseConfig);
-const Analytics = getAnalytics(App);
+const Analytics = getAnalytics(App)
 const Auth = getAuth(App);
 
 const EmailLoginForm = document.getElementById('email-login-form');
@@ -37,10 +37,6 @@ EmailLoginForm.addEventListener('submit', (e) => {
                 MessageDiv.innerHTML = 'A sign-in link has been sent to your email. Please make sure to check your spam folder.';
                 EmailLoginForm.reset();
             })
-            .catch((error) => {
-                console.error("Error sending email link:", error);
-                MessageDiv.innerHTML = `Error: ${error.message}`;
-            });
     } else {
         MessageDiv.innerHTML = 'This email is not allowed';
     }
@@ -51,27 +47,10 @@ if (isSignInWithEmailLink(Auth, window.location.href)) {
     if (email && (email.endsWith('@hsestudents.org') || email.endsWith('@hse.k12.in.us'))) {
         signInWithEmailLink(Auth, email, window.location.href)
             .then((result) => {
-                MessageDiv.innerHTML = `Successfully signed in as ${result.user.email}, redirecting to shop...`;
-                return result.user.getIdToken();
-            })
-            .then((token) => {
-                return fetch('/sessionLogin', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    credentials: 'include',
-                    body: JSON.stringify({ token })
-                });
-            })
-            .then((response) => {
-                if (response.ok) {
-                    setTimeout(() => {
-                        window.location.href = "../shop";
-                    }, 3000);
-                } else {
-                    throw new Error('Failed to create session on server.');
-                }
+                MessageDiv.innerHTML = `Successfully signed in as ${result.user.email}, redirecting to shop`;
+                setTimeout(() => {
+                    window.location.href = "../shop";
+                }, 3000);
             })
             .catch((error) => {
                 console.error("Error signing in with email link:", error);
@@ -81,11 +60,3 @@ if (isSignInWithEmailLink(Auth, window.location.href)) {
         MessageDiv.innerHTML = 'This email is not allowed';
     }
 }
-
-onAuthStateChanged(Auth, (user) => {
-    if (user) {
-        console.log('User is signed in:', user.email);
-    } else {
-        console.log('No user is signed in.');
-    }
-});
