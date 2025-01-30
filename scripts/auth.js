@@ -84,9 +84,6 @@ if (isSignInWithEmailLink(Auth, window.location.href)) {
 
 onAuthStateChanged(Auth, (user) => {
     if (user) {
-        user.getIdToken().then((idToken) => {
-        console.log("ID Token:", idToken);
-        });
         console.log('User is signed in:', user.email);
     } else {
         console.log('No user is signed in.');
