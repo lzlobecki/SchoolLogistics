@@ -16,16 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
         // From Square API: https://developer.squareup.com/reference/square/customers-api/retrieve-customer#response__property-customer
         const customerInfoDiv = document.getElementById('customer-info');
         customerInfoDiv.innerHTML = `
-          <h4>${customer.given_name} ${customer.family_name}</h4>
-          <p>Email: ${customer.email_address}</p>
-          <p>Balance: ${customer.reference_id}</p>
+          <p>Balance: ${customer}</p>
         `;
       }
     })
     .catch(error => {
       console.error('Error:', error);
     });
-  } else {
-    console.error('ClientEmail not found in localStorage');
   }
 });
