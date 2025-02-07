@@ -20,7 +20,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             const clientEmail = window.localStorage.getItem('ClientEmail');
             if (clientEmail) {
-                fetch('http://localhost:3000/api/customer-info', {
+                fetch('http://localhost:3000/api/getbalance', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
