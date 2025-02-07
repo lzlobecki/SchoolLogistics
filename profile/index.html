@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -19,5 +19,217 @@
 <body>
   <div id="customer-info"></div>
   <script src="../scripts/balance.js"></script>
+</body>
+</html>
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Profile Page</title>
+    <link rel="shortcut icon" href="Files/fhscoffeelogo.png" type="image/png">
+        <link rel="stylesheet" href="https://lzlobecki.github.io/SchoolLogistics/style.css">
+	
+
+  </head>
+
+  <body>
+
+   <!-- Splash Screen -->
+<div class="splash-screen">
+    <div class="splash-text">
+      <h1 class="accent-fishers">Fishers Coffee Shop</h1>
+      <h2 class="accent-coffee">by CrewBrew</h2>
+    </div>
+  </div>
+  
+  <script>
+    // Wait for the page to load
+    window.addEventListener("load", () => {
+      const splashScreen = document.querySelector(".splash-screen");
+  
+      // Wait 2 seconds, then fade out the splash screen
+      setTimeout(() => {
+        splashScreen.classList.add("hidden");
+      }, 1500); // 2000ms = 2 seconds
+    });
+  </script>
+  
+
+<header>
+    <nav class="header"> <!--HEADER-->
+        <div class="local-nav-wrapper">
+            <div class="local-nav">
+                <a href="https://lzlobecki.github.io/SchoolLogistics/">
+                    <img src="https://lzlobecki.github.io/SchoolLogistics/Files/fhscoffeelogo.png" alt="Crew Brew Logo" class="logo">
+                </a>
+
+                <div class="right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path d="M14 18.4883C14.3076 18.4795 14.5889 18.3652 14.8174 18.1191L21.4971 11.2812C21.6904 11.0879 21.7959 10.8418 21.7959 10.5518C21.7959 9.97168 21.3389 9.50586 20.7588 9.50586C20.4775 9.50586 20.2051 9.62012 20.0029 9.82227L14.0088 15.9834L7.99707 9.82227C7.79492 9.62891 7.53125 9.50586 7.24121 9.50586C6.66113 9.50586 6.2041 9.97168 6.2041 10.5518C6.2041 10.8418 6.30957 11.0879 6.50293 11.2812L13.1914 18.1191C13.4287 18.3652 13.6924 18.4883 14 18.4883Z" fill="#1C1C1E"/>
+                    </svg>
+
+                    <a href="https://lzlobecki.github.io/SchoolLogistics/instructions">How to Use</a>
+                    <a href="https://lzlobecki.github.io/SchoolLogistics/about">About Us</a>
+
+                    <button class="button" onclick="redirectToShop()">Shop Now!</button>
+                    <script>
+                        // Function to redirect the user to login
+                        function redirectToShop() {
+                            window.location.href = "https://lzlobecki.github.io/SchoolLogistics/login"; // Redirect to shop
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <h1>‎ </h1>
+    <h4>‎ </h4>
+    
+
+</header>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      padding: 20px;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 20px;
+    }
+    .sidebar {
+      flex: 1;
+      max-width: 300px;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    .sidebar img {
+      display: block;
+      margin: 0 auto 15px;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+    }
+    .sidebar h2, .sidebar p {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .content {
+      flex: 2;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    .content h3 {
+      margin-bottom: 20px;
+    }
+    .content .stats {
+      display: flex;
+      gap: 20px;
+    }
+    .stat-box {
+      flex: 1;
+      background: #f4f4f9;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .stat-box h4 {
+      margin-bottom: 5px;
+      color: #666;
+    }
+    .stat-box p {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .orders-history {
+      margin-top: 30px;
+    }
+    .orders-history h3 {
+      margin-bottom: 10px;
+    }
+    .orders-history table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .orders-history th, .orders-history td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+    .orders-history th {
+      background: #f4f4f9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <img src="https://via.placeholder.com/120" alt="User Profile">
+      <h2 id="customer-name">John Doe</h2>
+      <p><strong>Account Balance:</strong> <span id="account-balance">$50.00</span></p>
+      <button style="width: 100%; padding: 10px; background: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">Add Funds</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <h3>Account Summary</h3>
+      <div class="stats">
+        <div class="stat-box">
+          <h4>Coffees Ordered This Month</h4>
+          <p id="monthly-orders">10</p>
+        </div>
+        <div class="stat-box">
+          <h4>Total Coffees Ordered</h4>
+          <p id="total-orders">120</p>
+        </div>
+        <div class="stat-box">
+          <h4>Favorite Coffee</h4>
+          <p id="favorite-coffee">Latte</p>
+        </div>
+      </div>
+
+      <!-- Orders History -->
+      <div class="orders-history">
+        <h3>Order History</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Order</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody id="order-history">
+            <tr>
+              <td>12/01/2024</td>
+              <td>Cappuccino</td>
+              <td>$4.50</td>
+            </tr>
+            <tr>
+              <td>12/03/2024</td>
+              <td>Espresso</td>
+              <td>$3.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
