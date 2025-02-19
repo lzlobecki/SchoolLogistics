@@ -194,7 +194,7 @@ app.get('/api/success', async (req, res) => {
       const cents = parseInt(lineItem.base_price_money.amount, 10);
       const depositAmount = cents / 100;
 
-      const addBalanceResponse = await axios.post(`http://localhost:${port}/api/addbalance`, { email, amount: depositAmount });
+      const addBalanceResponse = await axios.post(`http://127.0.0.1:${port}/api/addbalance`, { email, amount: depositAmount });
       
       return res.json({ message: 'Deposit successful and balance updated', newBalance: addBalanceResponse.data });
     } else {
