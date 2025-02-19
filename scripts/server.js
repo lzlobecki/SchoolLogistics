@@ -114,7 +114,7 @@ app.post('/api/deposit', async (req, res) => {
       enable_loyalty: false,
       accepted_payment_methods: {},
       custom_fields: [],
-      redirect_url: "http://127.0.0.1:4000/success"
+      redirect_url: "http://127.0.0.1:4000/api/success"
     },
     order: {
       location_id: LocationId,
