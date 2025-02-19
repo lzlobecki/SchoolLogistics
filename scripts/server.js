@@ -142,6 +142,7 @@ app.post('/api/deposit', async (req, res) => {
       }
     });
     const orderId = linkResponse.data.payment_link.order_id;
+    const shortUrl = linkResponse.data.payment_link.url;
 
     const Payload = {
       order: {
@@ -158,7 +159,7 @@ app.post('/api/deposit', async (req, res) => {
       }
     });
     
-    return res.json(updateResponse.data.order.id);
+    return res.json({ order_id: orderId, url: shortUrl });
   } catch (error) {
     console.error('Error processing deposit:', error.response ? error.response.data : error.message);
     return res.status(500).json({ error: 'Failed to create deposit order' });
