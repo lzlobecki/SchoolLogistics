@@ -5,7 +5,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -22,7 +22,7 @@ app.post('/api/getbalance', async (req, res) => {
         'Square-Version': '2024-11-20',
         'Authorization': `Bearer ${process.env.SQUARE_API_KEY}`,
         'Content-Type': 'application/json',
-        'origin': 'http://localhost:3000'
+        'origin': 'http://127.0.0.1:4000'
       }
     });
     const data = response.data;
@@ -58,7 +58,7 @@ app.post('/api/addbalance', async (req, res) => {
         'Square-Version': '2024-11-20',
         'Authorization': `Bearer ${process.env.SQUARE_API_KEY}`,
         'Content-Type': 'application/json',
-        'origin': 'http://localhost:3000'
+        'origin': 'http://127.0.0.1:4000'
       }
     });
     const data = response.data;
@@ -114,7 +114,7 @@ app.post('/api/deposit', async (req, res) => {
       enable_loyalty: false,
       accepted_payment_methods: {},
       custom_fields: [],
-      redirect_url: "http://127.0.0.1:3000/success"
+      redirect_url: "http://127.0.0.1:4000/success"
     },
     order: {
       location_id: LocationId,
