@@ -95,14 +95,42 @@ app.post('/api/addbalance', async (req, res) => {
 });
 
 app.post('/api/deposit', async (req, res) => {
-  const { amount, customer_id } = req.body;
+  const { amount, ClientEmail } = req.body;
   if (!amount) {
     return res.status(400).json({ error: 'Amount is required' });
   }
-  if (!customer_id) {
-    return res.status(400).json({ error: 'Customer id is required' });
+  if (!ClientEmail) {
+    return res.status(400).json({ error: 'ClientEmail is required' });
   }
   
+  const searchPayload = {
+    query: {
+      filter: {
+        email_address: {
+          exact: ClientEmail
+        }
+      }
+    }
+  };
+  
+  try {
+    const searchResponse = await axios.post('https://connect.squareup.com/v2/customers/search', searchPayload, {
+      headers: {
+        'Square-Version': '2025-02-20',
+        'Authorization': `Bearer ${process.env.SQUARE_API_KEY}`,
+        'Content-Type': 'application/json'
+      }
+    });
+    const customers = searchResponse.data.customers;
+    if (!customers || customers.length === 0) {
+      return res.status(404).json({ error: 'Customer not found' });
+    }
+    var customer_id = customers[0].id;
+  } catch (error) {
+    console.error('Error finding customer:', error.response ? error.response.data : error.message);
+    return res.status(500).json({ error: 'Failed to find customer' });
+  }
+
   const LocationId = "L8YZ8F6VBGK7W";
   const cents = parseInt(parseFloat(amount) * 100, 10);
 
@@ -114,7 +142,7 @@ app.post('/api/deposit', async (req, res) => {
       enable_loyalty: false,
       accepted_payment_methods: {},
       custom_fields: [],
-      redirect_url: "http://127.0.0.1:4000/api/success"
+      redirect_url: "http://127.0.0.1:3000/success"
     },
     order: {
       location_id: LocationId,
