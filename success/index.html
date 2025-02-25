@@ -1,0 +1,21 @@
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const orderId = window.localStorage.getItem('order_id');
+      const clientEmail = window.localStorage.getItem('ClientEmail');
+      if (!orderId || !clientEmail) {
+        window.location.href = "../shop";
+        return;
+      }
+  
+      fetch(`http://127.0.0.1:4000/api/success?order_id=${orderId}&email=${clientEmail}`)
+        .then(response => response.json())
+        .then(data => {
+          window.localStorage.removeItem('order_id');
+          window.location.href = "../shop";
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          window.location.href = "../shop";
+        });
+    });
+  </script>
