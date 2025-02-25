@@ -171,6 +171,7 @@
               alert(data.error);
             } else {
               window.location.href = data.url;
+              localStorage.setItem('order_id', data.order_id);
             }
           })
           .catch(error => {
@@ -203,6 +204,7 @@
             alert(data.error);
           } else {
             window.location.href = data.url;
+            localStorage.setItem('order_id', data.order_id);
           }
         })
         .catch(error => {
