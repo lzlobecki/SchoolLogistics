@@ -193,6 +193,10 @@
           alert('Please enter a valid number.');
           return;
         }
+        if (amount < 10) {
+          alert('Minimum deposit is $10');
+          return;
+        }
         fetch('http://127.0.0.1:4000/api/deposit', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -296,13 +300,13 @@
     <div class="modal-content">
       <h2>Add Balance</h2>
       <div class="preset-buttons">
-        <button>$5</button>
         <button>$10</button>
+        <button>$20</button>
         <button>$25</button>
         <button>$50</button>
       </div>
       <div class="custom-balance">
-        <input type="number" id="custom-amount" placeholder="Custom $" min="0" step="any">
+        <input type="number" id="custom-amount" placeholder="Custom $" min="10" step="any">
         <button id="custom-add-btn">Add</button>
       </div>
       <button id="close-modal" class="close-modal">Cancel</button>
