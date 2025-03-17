@@ -272,6 +272,25 @@
     function redirectToOrder() {
       window.location.href = "https://lzlobecki.github.io/SchoolLogistics/login";
     }
+
+    
+        function copyCode() {
+            let textField = document.getElementById("promoCode");
+            textField.select();
+            navigator.clipboard.writeText(textField.value);
+
+            let defaultMsg = document.getElementById("defaultMessage");
+            let successMsg = document.getElementById("successMessage");
+
+            defaultMsg.classList.add("hidden");
+            successMsg.classList.remove("hidden");
+
+            setTimeout(() => {
+                defaultMsg.classList.remove("hidden");
+                successMsg.classList.add("hidden");
+            }, 2000);
+        }
+    
   </script>
 </head>
 <body>
