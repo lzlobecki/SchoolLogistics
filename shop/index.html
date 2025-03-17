@@ -114,6 +114,53 @@
       background: #f0f0f0;
       color: #e60000;
     }
+      /* Copy Code Container */
+    .copy-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        margin: 20px auto;
+        max-width: 300px;
+    }
+    .code-box {
+        background: #fff5f5;
+        border: 1px solid #ff4d4d;
+        color: #cc0000;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        flex-grow: 1;
+        margin-right: 10px;
+    }
+    .copy-btn {
+        background: #ff4d4d;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .copy-btn:hover {
+        background: #cc0000;
+    }
+    .hidden {
+        display: none;
+    }
+    .success-icon {
+        width: 14px;
+        height: 14px;
+        margin-right: 5px;
+    }
   </style>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -250,7 +297,22 @@
 
   <div id="balance-label" class="balance-label">Balance: 0</div>
 
-  <h1> ‎  </h1>
+   <h2>‎</h2>
+<h6 style="text-align:center;">Use this code to PAYLATER</h6> 
+
+<!-- Copy Code Section -->
+<div class="copy-container" style="text-align:left; display: flex; align-items: center; gap: 5px;">
+    <input id="promoCode" type="text" class="code-box" value="PAYLATER" readonly style="width: auto; min-width: 100px; text-align: left;">
+    <button class="copy-btn" onclick="copyCode()" style="white-space: nowrap;">
+        <span id="defaultMessage">Copy</span>
+        <span id="successMessage" class="hidden">
+            <svg class="success-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+            </svg>
+            Copied!
+        </span>
+    </button>
+</div>
   
   <div class="grid">
     <div class="row">
