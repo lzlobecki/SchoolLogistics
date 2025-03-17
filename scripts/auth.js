@@ -50,7 +50,7 @@ if (isSignInWithEmailLink(Auth, window.location.href)) {
                 MessageDiv.innerHTML = `Successfully signed in as ${result.user.email}, redirecting to shop`;
                 setTimeout(() => {
                     window.location.href = "../shop";
-                }, 3000);
+                }, 2000);
             })
             .catch((error) => {
                 console.error("Error signing in with email link:", error);
