@@ -58,7 +58,12 @@
       font-size: 18px;
       margin-bottom: 10px;
     }
-    .preset-buttons button {
+    .payment-note {
+      font-size: 14px;
+      margin-bottom: 15px;
+      color: #555;
+    }
+    .preset-buttons button, .order-buttons button {
       padding: 12px 16px;
       font-size: 14px;
       border: none;
@@ -67,8 +72,9 @@
       color: #fff;
       cursor: pointer;
       transition: background 0.3s ease;
+      margin: 5px;
     }
-    .preset-buttons button:hover {
+    .preset-buttons button:hover, .order-buttons button:hover {
       background: #e60000;
     }
     .custom-balance {
@@ -114,227 +120,65 @@
       background: #f0f0f0;
       color: #e60000;
     }
-      /* Copy Code Container */
-      background: #e60000;
+    .copy-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      margin: 20px auto;
+      max-width: 300px;
     }
-    .close-modal {
-      margin-top: 15px;
-      background: transparent;
-      border: 2px solid #e60000;
-      color: #e60000;
-      cursor: pointer;
-      font-size: 1em;
-      text-decoration: none;
-      padding: 8px 16px;
+    .code-box {
+      background: #fff5f5;
+      border: 1px solid #ff4d4d;
+      color: #cc0000;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 10px;
       border-radius: 5px;
-      transition: background 0.3s ease, color 0.3s ease;
+      text-align: center;
+      flex-grow: 1;
+      margin-right: 10px;
     }
-    .close-modal:hover {
-      background: #f0f0f0;
-      color: #e60000;
-    }
-      /* Copy Code Container */
-      background: #e60000;
-    }
-    .close-modal {
-      margin-top: 15px;
-      background: transparent;
-      border: 2px solid #e60000;
-      color: #e60000;
-      cursor: pointer;
-      font-size: 1em;
-      text-decoration: none;
-      padding: 8px 16px;
+    .copy-btn {
+      background: #ff4d4d;
+      color: white;
+      border: none;
+      padding: 10px;
       border-radius: 5px;
-      transition: background 0.3s ease, color 0.3s ease;
-    }
-    .close-modal:hover {
-      background: #f0f0f0;
-      color: #e60000;
-    }
-      /* Copy Code Container */
-      background: #e60000;
-    }
-    .close-modal {
-      margin-top: 15px;
-      background: transparent;
-      border: 2px solid #e60000;
-      color: #e60000;
       cursor: pointer;
-      font-size: 1em;
-      text-decoration: none;
-      padding: 8px 16px;
-      border-radius: 5px;
-      transition: background 0.3s ease, color 0.3s ease;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 100px;
+      height: 36px;
+      text-align: center;
+      font-weight: bold;
     }
-    .close-modal:hover {
-      background: #f0f0f0;
-      color: #e60000;
+    .copy-btn:hover {
+      background: #cc0000;
     }
-      /* Copy Code Container */
-      background: #e60000;
+    .hidden {
+      display: none;
     }
-    .close-modal {
-      margin-top: 15px;
-      background: transparent;
-      border: 2px solid #e60000;
-      color: #e60000;
-      cursor: pointer;
-      font-size: 1em;
-      text-decoration: none;
-      padding: 8px 16px;
-      border-radius: 5px;
-      transition: background 0.3s ease, color 0.3s ease;
+    .success-icon {
+      width: 14px;
+      height: 14px;
+      margin-right: 5px;
     }
-    .close-modal:hover {
-      background: #f0f0f0;
-      color: #e60000;
-    }
-      /* Copy Code Container */
-      background: #e60000;
-    }
-    .close-modal {
-      margin-top: 15px;
-      background: transparent;
-      border: 2px solid #e60000;
-      color: #e60000;
-      cursor: pointer;
-      font-size: 1em;
-      text-decoration: none;
-      padding: 8px 16px;
-      border-radius: 5px;
-      transition: background 0.3s ease, color 0.3s ease;
-    }
-    .close-modal:hover {
-      background: #f0f0f0;
-      color: #e60000;
-    }
-      /* Copy Code Container */
-      background: #e60000;
-    }
-    .close-modal {
-      margin-top: 15px;
-      background: transparent;
-      border: 2px solid #e60000;
-      color: #e60000;
-      cursor: pointer;
-      font-size: 1em;
-      text-decoration: none;
-      padding: 8px 16px;
-      border-radius: 5px;
-      transition: background 0.3s ease, color 0.3s ease;
-    }
-    .close-modal:hover {
-      background: #f0f0f0;
-      color: #e60000;
-    }
-      /* Copy Code Container */
-      background: #e60000;
-    }
-    .close-modal {
-      margin-top: 15px;
-      background: transparent;
-      border: 2px solid #e60000;
-      color: #e60000;
-      cursor: pointer;
-      font-size: 1em;
-      text-decoration: none;
-      padding: 8px 16px;
-      border-radius: 5px;
-      transition: background 0.3s ease, color 0.3s ease;
-    }
-    .close-modal:hover {
-      background: #f0f0f0;
-      color: #e60000;
-    }
-      /* Copy Code Container */
-      background: #e60000;
-    }
-    .close-modal {
-      margin-top: 15px;
-      background: transparent;
-      border: 2px solid #e60000;
-      color: #e60000;
-      cursor: pointer;
-      font-size: 1em;
-      text-decoration: none;
-      padding: 8px 16px;
-      border-radius: 5px;
-      transition: background 0.3s ease, color 0.3s ease;
-    }
-    .close-modal:hover {
-      background: #f0f0f0;
-      color: #e60000;
-    }
-/* Copy Code Container */
-.copy-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    margin: 20px auto;
-    max-width: 300px;
-}
-
-/* Promo Code Box */
-.code-box {
-    background: #fff5f5;
-    border: 1px solid #ff4d4d;
-    color: #cc0000;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    flex-grow: 1;
-    margin-right: 10px;
-}
-
-/* Button Styling */
-.copy-btn {
-    background: #ff4d4d;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 100px; /* Ensures both buttons are the same width */
-    height: 36px; /* Ensures both buttons are the same height */
-    text-align: center;
-    font-weight: bold;
-}
-
-/* Hover Effect */
-.copy-btn:hover {
-    background: #cc0000;
-}
-
-/* Hide Default and Success Message */
-.hidden {
-    display: none;
-}
-
-/* Success Icon */
-.success-icon {
-    width: 14px;
-    height: 14px;
-    margin-right: 5px;
-}
-
   </style>
   <script>
+    let orderURL = "";
+
     document.addEventListener('DOMContentLoaded', () => {
-        if (!window.localStorage.getItem('ClientEmail')) {
-            window.location.href = "../login";
-      return;
-    }
+      if (!window.localStorage.getItem('ClientEmail')) {
+          window.location.href = "../login";
+        return;
+      }
       const clientEmail = window.localStorage.getItem('ClientEmail');
       if (clientEmail) {
         fetch('http://127.0.0.1:4000/api/getbalance', {
@@ -355,17 +199,17 @@
       } else {
         console.error('ClientEmail not found in localStorage');
       }
-  
+
       document.addEventListener('click', function(event) {
         if (event.target && event.target.id === 'add-balance-button') {
           document.getElementById('balance-modal').style.display = 'flex';
         }
       });
-  
+
       document.getElementById('close-modal').addEventListener('click', () => {
         document.getElementById('balance-modal').style.display = 'none';
       });
-  
+
       document.querySelectorAll('.preset-buttons button').forEach(btn => {
         btn.addEventListener('click', () => {
           const amount = parseFloat(btn.innerText.replace('$', ''));
@@ -394,7 +238,7 @@
           });
         });
       });
-  
+
       document.getElementById('custom-add-btn').addEventListener('click', () => {
         const input = document.getElementById('custom-amount');
         const amount = parseFloat(input.value);
@@ -430,8 +274,31 @@
           alert('Error depositing funds.');
         });
       });
+
+      // Order Modal Buttons
+      document.getElementById('balance-pay-btn').addEventListener('click', () => {
+        document.getElementById('order-modal').style.display = 'none';
+        window.location.href = orderURL; // Proceed with balance payment
+      });
+
+      document.getElementById('buy-btn').addEventListener('click', () => {
+        document.getElementById('order-modal').style.display = 'none';
+        const urlObj = new URL(orderURL);
+        urlObj.searchParams.append("surcharge", "3");
+        window.location.href = urlObj.toString();
+      });
+
+      document.getElementById('order-modal-close').addEventListener('click', () => {
+        document.getElementById('order-modal').style.display = 'none';
+      });
     });
-  
+
+    function openOrderModal(event) {
+      event.preventDefault();
+      orderURL = event.currentTarget.getAttribute('data-link');
+      document.getElementById('order-modal').style.display = 'flex';
+    }
+    
     function openPopup(url) {
       window.open(url, 'popupWindow', 'width=400,height=400,scrollbars=yes');
     }
@@ -439,24 +306,23 @@
     function redirectToOrder() {
       window.location.href = "https://lzlobecki.github.io/SchoolLogistics/login";
     }
-
     
-        function copyCode() {
-            let textField = document.getElementById("promoCode");
-            textField.select();
-            navigator.clipboard.writeText(textField.value);
+    function copyCode() {
+      let textField = document.getElementById("promoCode");
+      textField.select();
+      navigator.clipboard.writeText(textField.value);
 
-            let defaultMsg = document.getElementById("defaultMessage");
-            let successMsg = document.getElementById("successMessage");
+      let defaultMsg = document.getElementById("defaultMessage");
+      let successMsg = document.getElementById("successMessage");
 
-            defaultMsg.classList.add("hidden");
-            successMsg.classList.remove("hidden");
+      defaultMsg.classList.add("hidden");
+      successMsg.classList.remove("hidden");
 
-            setTimeout(() => {
-                defaultMsg.classList.remove("hidden");
-                successMsg.classList.add("hidden");
-            }, 2000);
-        }
+      setTimeout(() => {
+          defaultMsg.classList.remove("hidden");
+          successMsg.classList.add("hidden");
+      }, 2000);
+    }
     
   </script>
 </head>
@@ -483,22 +349,22 @@
 
   <div id="balance-label" class="balance-label">Balance: 0</div>
 
-   <h2>‎</h2>
-<h6 style="text-align:center;">Use this code to PAYLATER</h6> 
+  <h2>‎</h2>
+  <h6 style="text-align:center;">Use this code to PAYLATER</h6> 
 
-<!-- Copy Code Section -->
-<div class="copy-container" style="text-align:left; display: flex; align-items: center; gap: 5px;">
+  <!-- Copy Code Section -->
+  <div class="copy-container" style="text-align:left; display: flex; align-items: center; gap: 5px;">
     <input id="promoCode" type="text" class="code-box" value="PAYLATER" readonly style="width: auto; min-width: 100px; text-align: left;">
     <button class="copy-btn" onclick="copyCode()" style="white-space: nowrap;">
-        <span id="defaultMessage">Copy</span>
-        <span id="successMessage" class="hidden">
-            <svg class="success-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
-            </svg>
-            Copied!
-        </span>
+      <span id="defaultMessage">Copy</span>
+      <span id="successMessage" class="hidden">
+        <svg class="success-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+        </svg>
+        Copied!
+      </span>
     </button>
-</div>
+  </div>
   
   <div class="grid">
     <div class="row">
@@ -506,19 +372,19 @@
         <img src="/Files/coffee icon.jpeg" alt="Coffee (Large)" class="product-image" />
         <h3 class="product-title">Coffee (Large)</h3>
         <div class="price"><span class="current-price">$2.00</span></div>
-        <button class="add-to-cart" onclick="openPopup('https://square.link/u/WfV5W5Xh')">Order</button>
+        <button class="add-to-cart" data-link="https://square.link/u/WfV5W5Xh" onclick="openOrderModal(event)">Order</button>
       </div>
       <div class="product-card">
         <img src="/Files/coffee icon.jpeg" alt="Coffee (Small)" class="product-image" />
         <h3 class="product-title">Coffee (Small)</h3>
         <div class="price"><span class="current-price">$1.00</span></div>
-        <button class="add-to-cart" onclick="openPopup('https://square.link/u/4rpp7wmv')">Order</button>
+        <button class="add-to-cart" data-link="https://square.link/u/4rpp7wmv" onclick="openOrderModal(event)">Order</button>
       </div>
       <div class="product-card">
         <img src="/Files/hot choloclate icon.jpeg" alt="Hot Chocolate (12oz)" class="product-image" />
         <h3 class="product-title">Hot Chocolate (12 oz)</h3>
         <div class="price"><span class="current-price">$2.00</span><span class="original-price">$26.99</span></div>
-        <button class="add-to-cart" onclick="openPopup('PLACEHOLDER_LINK')">Order</button>
+        <button class="add-to-cart" data-link="PLACEHOLDER_LINK" onclick="openOrderModal(event)">Order</button>
       </div>
     </div>
 
@@ -527,23 +393,24 @@
         <img src="/Files/coffee icon.jpeg" alt="Coffee (Large Decaf)" class="product-image" />
         <h3 class="product-title">Coffee (Large Decaf)</h3>
         <div class="price"><span class="current-price">$2.00</span></div>
-        <button class="add-to-cart" onclick="openPopup('https://square.link/u/vFjS7rhS')">Order</button>
+        <button class="add-to-cart" data-link="https://square.link/u/vFjS7rhS" onclick="openOrderModal(event)">Order</button>
       </div>
       <div class="product-card">
         <img src="/Files/coffee icon.jpeg" alt="Coffee (Small Decaf)" class="product-image" />
         <h3 class="product-title">Coffee (Small Decaf)</h3>
         <div class="price"><span class="current-price">$1.00</span></div>
-        <button class="add-to-cart" onclick="openPopup('https://square.link/u/UrYjf4Dx')">Order</button>
+        <button class="add-to-cart" data-link="https://square.link/u/UrYjf4Dx" onclick="openOrderModal(event)">Order</button>
       </div>
       <div class="product-card">
         <img src="/Files/water cup.jpeg" alt="Water" class="product-image" />
         <h3 class="product-title">Water</h3>
         <div class="price"><span class="current-price">$1.00</span><span class="original-price">$18.95</span></div>
-        <button class="add-to-cart" onclick="openPopup('PLACEHOLDER_LINK')">Order</button>
+        <button class="add-to-cart" data-link="PLACEHOLDER_LINK" onclick="openOrderModal(event)">Order</button>
       </div>
     </div>
   </div>
 
+  <!-- Balance Modal -->
   <div id="balance-modal" class="modal">
     <div class="modal-content">
       <h2>Add Balance</h2>
@@ -558,6 +425,19 @@
         <button id="custom-add-btn">Add</button>
       </div>
       <button id="close-modal" class="close-modal">Cancel</button>
+    </div>
+  </div>
+
+  <!-- Order Modal -->
+  <div id="order-modal" class="modal">
+    <div class="modal-content">
+      <h2>Choose Payment Option</h2>
+      <p class="payment-note">to pay later, checkout normally and use coupon: "PAYLATER"</p>
+      <div class="order-buttons">
+        <button id="balance-pay-btn">Pay using balance</button>
+        <button id="buy-btn">Buy (+3%)</button>
+      </div>
+      <button id="order-modal-close" class="close-modal">Cancel</button>
     </div>
   </div>
 </body>
